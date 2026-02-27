@@ -2496,10 +2496,6 @@ h6,
     @media only screen and (min-width: 768px) {
       .thb-secondary-area-item {
         padding: 0 12px; } }
-    .thb-secondary-area-item:last-child {
-      padding-right: 0; }
-      [dir="rtl"] .thb-secondary-area-item:last-child {
-        padding-right: 8px; }
     .thb-secondary-area-item.thb-secondary-myaccount {
       display: none;
       font-weight: var(--font-body-medium-weight, 500);
@@ -4200,6 +4196,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   @media only screen and (min-width: 768px) {
     .column-spacing--large {
       gap: 30px; } }
+
+.column-spacing--no-gap {
+  gap: 0; }
 
 .inline-badge {
   display: inline-flex;
