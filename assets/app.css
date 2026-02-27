@@ -8,7 +8,7 @@ Author URI: https://fuelthemes.net
 
 
 #wrapper .click-capture,
-#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu--link:after, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
+#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
 input[type="submit"] span, input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -124,7 +124,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
+  -webkit-appearance: button;
+  appearance: button; }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -167,6 +168,7 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px; }
 
 [type="search"]::-webkit-search-decoration {
@@ -199,7 +201,8 @@ template {
 
 [draggable=false] {
   -webkit-touch-callout: none;
-  -webkit-user-select: none; }
+  -webkit-user-select: none;
+  user-select: none; }
 
 .foundation-mq {
   font-family: "small=0em&medium=48em&large=66.75em&xlarge=75em"; }
@@ -2218,8 +2221,6 @@ h6,
         opacity: 1; }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a {
       color: var(--color-header-transparent-text, #fff); }
-      .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a:after {
-        background: var(--color-header-transparent-text, #fff); }
       .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a > svg path {
         stroke: var(--color-header-transparent-text, #fff); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-localization-forms.inside-header-arrow svg path {
@@ -2494,11 +2495,11 @@ h6,
     display: inline-flex; }
     @media only screen and (min-width: 768px) {
       .thb-secondary-area-item {
-        padding: 0 10px; } }
+        padding: 0 12px; } }
     .thb-secondary-area-item:last-child {
       padding-right: 0; }
       [dir="rtl"] .thb-secondary-area-item:last-child {
-        padding-right: 7px; }
+        padding-right: 8px; }
     .thb-secondary-area-item.thb-secondary-myaccount {
       display: none;
       font-weight: var(--font-body-medium-weight, 500);
@@ -2680,22 +2681,8 @@ h6,
     font-size: calc(var(--font-navigation-scale, 1) * 15px); }
     .navigation-uppercase-true .thb-full-menu--link {
       text-transform: uppercase; }
-    .thb-full-menu--link:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      will-change: transform;
-      height: 1px;
-      transform: scale(0, 1);
-      transform-origin: left center;
-      background: var(--color-header-links-hover, --color-accent); }
     .thb-full-menu--link:hover, .thb-full-menu--link:focus {
       color: var(--color-header-links-hover, --color-accent2); }
-      .thb-full-menu--link:hover:after, .thb-full-menu--link:focus:after {
-        transform: scale(1, 1); }
       .thb-full-menu--link:hover svg path, .thb-full-menu--link:focus svg path {
         stroke: var(--color-header-links-hover, --color-accent2); }
   .thb-full-menu > li {
@@ -2790,8 +2777,6 @@ h6,
     opacity: 0;
     z-index: 2;
     visibility: hidden; }
-    .thb-full-menu .sub-menu a:not(.text-button):after {
-      top: calc(100% - 3px); }
     .thb-full-menu .sub-menu ul {
       line-height: inherit; }
     .thb-full-menu .sub-menu .thb-full-menu--link {
@@ -3056,7 +3041,7 @@ button {
 input[type="submit"] {
   display: inline-flex;
   cursor: pointer;
-  padding: 7px 30px;
+  padding: 8px 48px;
   align-items: center;
   justify-content: center;
   height: 50px;
@@ -3883,7 +3868,7 @@ select {
 
 
 #wrapper .click-capture,
-#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu--link:after, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
+#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
 input[type="submit"] span, input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -4095,7 +4080,7 @@ https://flickity.metafizzy.co
 
 
 #wrapper .click-capture,
-#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu--link:after, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
+#wrapper .click-capture--product, .side-panel, .side-panel-content--tabs button, .side-panel-content--tabs button:after, .back-to-top, .back-to-top path, .header:after, .header .logolink .logoimg, .thb-secondary-area-item.thb-secondary-myaccount span:after, .thb-secondary-area-item svg path, .thb-secondary-area .thb-item-count, .mobile-toggle span, .thb-full-menu li.menu-item-has-children > .thb-full-menu--link svg path, .thb-full-menu.thb-secondary-menu li a, .button span,
 input[type="submit"] span, input[type="text"],
 input[type="password"],
 input[type="date"],

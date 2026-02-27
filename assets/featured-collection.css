@@ -2,6 +2,9 @@
 
 
 
+/* Hide section-header--button ("Shop collection" / "View all" link) */
+/* .section-featured-collection .section-header--button { display: none !important; } */
+
 .featured-collection {
   overflow: hidden; }
   @media only screen and (max-width: 767px) {

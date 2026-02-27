@@ -36,7 +36,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
 	<div class="small-12 columns">
-		<div class="image-with-text column-spacing--{{ column_spacing }} grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; --solid-button-background: {{ color_text }}; --solid-button-background-hover: {{ color_text | color_darken: 7 }}; --solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
+		<div class="image-with-text column-spacing--{{ column_spacing }} grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; --solid-button-background: #1D58BA; --solid-button-background-hover: {{ '#1D58BA' | color_darken: 7 }}; --solid-button-label: #fff;--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
 			<div class="image-with-text--image image-with-text--inner">
 				<div class="image-with-text--image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 					{%- if use_video -%}
@@ -200,11 +200,15 @@
 					{
 						"value": "large",
 						"label": "Large"
+					},
+					{
+						"value": "none",
+						"label": "None"
 					}
 				],
 				"default": "medium",
 				"label": "Desktop image width",
-				"info": "Image is automatically optimized for mobile."
+				"info": "Image is automatically optimized for mobile. None removes spacing and flattens borders where columns meet."
 			},
 			{
 				"type": "checkbox",

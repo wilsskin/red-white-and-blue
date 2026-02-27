@@ -14,7 +14,7 @@
 .text-with-icons {
   background: var(--color-bg); }
   .text-with-icons.text-with-icons-has-bg--true {
-    padding: 30px 0; }
+    padding: 80px 0; }
   .text-with-icons.text-left {
     text-align: left; }
   .text-with-icons.text-center {
@@ -23,32 +23,32 @@
     text-align: right; }
   .text-with-icons__inner {
     display: grid;
-    gap: 40px 20px;
+    gap: 64px 40px;
     justify-content: center;
-    grid-auto-columns: minmax(250px, 300px); }
+    grid-auto-columns: minmax(200px, 240px); }
     @media only screen and (min-width: 768px) {
       .text-with-icons__inner {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 300px)); } }
+        grid-template-columns: repeat(auto-fill, minmax(200px, 240px)); } }
   @media only screen and (min-width: 768px) {
     .text-with-icons.icon-columns-2 .text-with-icons__inner {
-      grid-template-columns: repeat(2, minmax(200px, 300px)); } }
+      grid-template-columns: repeat(2, minmax(200px, 240px)); } }
   @media only screen and (min-width: 768px) {
     .text-with-icons.icon-columns-3 .text-with-icons__inner {
-      grid-template-columns: repeat(3, minmax(200px, 300px)); } }
+      grid-template-columns: repeat(3, minmax(200px, 240px)); } }
   @media only screen and (min-width: 768px) {
     .text-with-icons.icon-columns-4 .text-with-icons__inner {
-      grid-template-columns: repeat(2, minmax(200px, 300px)); } }
+      grid-template-columns: repeat(2, minmax(200px, 240px)); } }
   @media only screen and (min-width: 1068px) {
     .text-with-icons.icon-columns-4 .text-with-icons__inner {
-      grid-template-columns: repeat(4, minmax(200px, 300px)); } }
+      grid-template-columns: repeat(4, minmax(200px, 240px)); } }
   @media only screen and (max-width: 767px) {
     .text-with-icons.swipe-on-mobile .text-with-icons__inner {
       overflow-x: auto;
       justify-content: flex-start;
       scroll-snap-type: x mandatory;
       grid-auto-flow: column;
-      grid-auto-columns: minmax(250px, 300px);
-      grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+      grid-auto-columns: minmax(200px, 240px);
+      grid-template-columns: repeat(auto-fill, minmax(200px, 240px));
       scrollbar-width: none; }
       .text-with-icons.swipe-on-mobile .text-with-icons__inner::-webkit-scrollbar {
         display: none; } }
