@@ -129,6 +129,7 @@
         "0aa79bf4-864f-418d-a154-7f4dd2b2614b",
         "164794776393e76b8e-2"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
