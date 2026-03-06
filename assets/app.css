@@ -1945,7 +1945,7 @@ scroll-shadow {
 .subheading {
   font-size: 0.75rem;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   font-weight: var(--font-body-medium-weight, 500); }
 

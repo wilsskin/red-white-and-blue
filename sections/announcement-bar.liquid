@@ -34,11 +34,11 @@
 			<div class="announcement-bar--inner direction-{{ direction }} announcement-bar--{{ announcement_bar_layout }}" style="--marquee-speed: {{ speed }}">
 				{%- if announcement_bar_layout == 'marquee' -%}
 					{%- capture scrolling_text -%}
-					<div>
+						<div>
 						{%- for block in section.blocks -%}
-							<div class="announcement-bar--item{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}" {{ block.shopify_attributes }}>
+							<div class="announcement-bar--item{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank %} announcement-bar--item-has-link{% endif %}" {{ block.shopify_attributes }}>
 								{%- if block.settings.link != blank -%}
-									<a href="{{ block.settings.link }}" target="_blank">
+									<a href="{{ block.settings.link }}" class="announcement-bar--link" target="_blank">
 								{%- endif -%}
 								{%- if block.settings.hover_text != blank -%}
 									<span class="announcement-bar--text-flip-wrap">
@@ -61,9 +61,9 @@
 				{%- elsif announcement_bar_layout == 'carousel' -%}
 					<slide-show class="carousel announcement-bar--use-colors-{{ use_block_colors }}" data-autoplay="{{ autoplay }}">
 						{%- for block in section.blocks -%}
-							<div class="announcement-bar--item carousel__slide{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}" data-color="{{ block.settings.color_text }}" data-bg="{{ block.settings.color_bg }}" {{ block.shopify_attributes }}>
+							<div class="announcement-bar--item carousel__slide{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank %} announcement-bar--item-has-link{% endif %}" data-color="{{ block.settings.color_text }}" data-bg="{{ block.settings.color_bg }}" {{ block.shopify_attributes }}>
 								{%- if block.settings.link != blank -%}
-									<a href="{{ block.settings.link }}" target="_blank">
+									<a href="{{ block.settings.link }}" class="announcement-bar--link" target="_blank">
 								{%- endif -%}
 								{%- if block.settings.hover_text != blank -%}
 									<span class="announcement-bar--text-flip-wrap">

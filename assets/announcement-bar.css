@@ -80,11 +80,24 @@
     padding: 0 20px;
     font-size: 14px;
     line-height: 20px; }
+    .announcement-bar--item-has-link {
+      position: relative;
+      align-self: stretch; }
+    .announcement-bar--item-has-link .announcement-bar--link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 20px; }
     .announcement-bar--item svg {
       margin-right: 12px;
       height: 14px;
       fill: var(--color-announcement-bar-text, #fff); }
-    .announcement-bar--item a {
+    .announcement-bar--item a,
+    .announcement-bar--item .announcement-bar--link {
       color: var(--color-announcement-bar-text, #fff); }
 
   .announcement-bar--item-has-hover .announcement-bar--text-flip-wrap {

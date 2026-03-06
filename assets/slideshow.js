@@ -345,18 +345,31 @@ if (!customElements.get('slide-show')) {
         });
       }
 
-      // Collection tabs: horizontal wheel moves carousel; vertical wheel scrolls the page
+      // Collection tabs: horizontal wheel moves carousel; vertical wheel scrolls the page.
+      // Accumulate delta so scroll strength is proportional — more scroll = more slides; threshold makes it less reactive.
       if (slideshow.classList.contains('products') && slideshow.closest('.section-collection-tabs')) {
+        const WHEEL_THRESHOLD = 100;
+        const WHEEL_RESET_MS = 180;
+        let accumulatedDeltaX = 0;
+        let wheelResetTimeout;
         slideshow.addEventListener('wheel', function (event) {
           const dx = event.deltaX;
           const dy = event.deltaY;
           if (Math.abs(dx) <= Math.abs(dy)) return;
           event.preventDefault();
-          if (dx > 0) {
+          clearTimeout(wheelResetTimeout);
+          accumulatedDeltaX += dx;
+          while (accumulatedDeltaX > WHEEL_THRESHOLD) {
             flkty.next();
-          } else {
-            flkty.previous();
+            accumulatedDeltaX -= WHEEL_THRESHOLD;
           }
+          while (accumulatedDeltaX < -WHEEL_THRESHOLD) {
+            flkty.previous();
+            accumulatedDeltaX += WHEEL_THRESHOLD;
+          }
+          wheelResetTimeout = setTimeout(function () {
+            accumulatedDeltaX = 0;
+          }, WHEEL_RESET_MS);
         }, { passive: false });
       }
 
