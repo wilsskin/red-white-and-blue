@@ -141,6 +141,54 @@
         "disable_bottom_spacing": true
       }
     },
+    "image_with_text_overlay_MJC3Ap": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_XrM6gp": {
+          "type": "heading",
+          "settings": {
+            "text": "Freedom Wears BLUE",
+            "heading_size": "h1-large"
+          }
+        },
+        "text_BHwiDf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bold American apparel for people who choose<br/> tomorrow over yesterday</p><p></p>",
+            "description_size": "medium"
+          }
+        },
+        "button_ykHC4T": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_color": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XrM6gp",
+        "text_BHwiDf",
+        "button_ykHC4T"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/hero-img.png",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-450",
+        "full_width": true,
+        "content_width": "medium",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "text_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "16614195534fb74bc3": {
       "type": "collection-tabs",
       "blocks": {
@@ -858,6 +906,7 @@
   "order": [
     "spacer_9LrAfG",
     "16479477632637c9a7",
+    "image_with_text_overlay_MJC3Ap",
     "16614195534fb74bc3",
     "8670c6b1-68f6-405f-bfff-2c6ff1e89099",
     "image_with_text_jDGhXT",
