@@ -1,0 +1,53 @@
+{%- if section_heading != blank or section_description != blank -%}
+<div class="section-header">
+	<div class="section-header--content">
+		{%- if section_heading -%}
+			<h3 class="section-header--title">
+				{% render 'animated-marker-heading', heading: section_heading, style: marker_style, color: marker_color %}
+			</h3>
+		{%- endif -%}
+		{%- if section_description != blank -%}
+			<div class="section-header--description rte">
+				{{ section_description }}
+			</div>
+		{%- endif -%}
+	</div>
+	{%- if section_heading_button -%}
+	<div class="section-header--button">
+		{% assign text_button_title = 'sections.featured_collection.shop_collection' | t: collection: section_heading_button.title %}
+		{% render 'text-button', url: section_heading_button.url, title: text_button_title %}
+	</div>
+	{%- elsif section_heading_button_blog -%}
+	<div class="section-header--button">
+		{% assign text_button_title = 'sections.featured_blog.view_all' | t %}
+		{% render 'text-button', url: section_heading_button_blog.url, title: text_button_title %}
+	</div>
+	{%- endif -%}
+	{%- if blocks -%}
+	<scroll-shadow>
+		<collection-tabs class="collection-tabs__list" data-target="product-grid-{{ section_id }}">
+			{%- for block in blocks -%}
+				{%- liquid
+					if block.settings.collection != blank
+						assign tab_handle = block.settings.collection.handle
+						assign tab_label = block.settings.collection.title
+					else
+						assign tab_handle = 'collection-' | append: block.id
+						assign tab_label = 'Collection ' | append: forloop.index
+					endif
+					if block.settings.tab_button_label != blank
+						assign tab_label = block.settings.tab_button_label
+					endif
+					if block.settings.tab_button_link != blank
+						assign tab_href = block.settings.tab_button_link
+					else
+						assign tab_href = '#'
+					endif
+				-%}
+				<a href="{{ tab_href }}" data-collection="{{ tab_handle }}" class="collection-tabs__list-link text-button text-button--has-icon{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>{{ tab_label }} <span>{% render 'svg-icons' with 'thb-caret-right' %}</span></a>
+			{%- endfor -%}
+		</collection-tabs>
+	</scroll-shadow>
+	{%- endif -%}
+</div>
+{%- endif -%}
