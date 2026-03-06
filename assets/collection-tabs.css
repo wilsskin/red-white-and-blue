@@ -9,13 +9,22 @@
   font-weight: var(--font-body-medium-weight, 500);
   margin: 0 2px 2px 0;
   line-height: 1;
-  color: var(--color-accent);
+  color: #1D58BA;
   text-decoration: none;
   background: none; }
+  .collection-tabs__list-link svg path {
+    stroke: #1D58BA;
+    transition: stroke 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
   .collection-tabs__list-link:hover,
   .active.collection-tabs__list-link {
-    color: var(--color-accent);
+    color: #174695;
     background: none; }
+  .collection-tabs__list-link:hover svg,
+  .active.collection-tabs__list-link svg {
+    animation: none; }
+  .collection-tabs__list-link:hover svg path,
+  .active.collection-tabs__list-link svg path {
+    stroke: #174695; }
   .collection-tabs__list-link span {
     margin-left: 6px; }
 

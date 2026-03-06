@@ -24,7 +24,7 @@
 				<figure class="promotion-blocks--image">
 					<div class="aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent:{{ 1.0 | divided_by: ratio | times: 100.0 }}%;">
 						{%- if block.settings.image != blank -%}
-							{%- render 'responsive-image', image: block.settings.image, sizes: '(min-width: 768px) 33vw, 100vw' -%}
+							{%- render 'responsive-image', image: block.settings.image, sizes: '690x690,1380x1380' -%}
 						{%- else -%}
 							{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
 						{%- endif -%}

@@ -345,12 +345,14 @@ if (!customElements.get('slide-show')) {
         });
       }
 
-      // Collection tabs: allow scroll (wheel) to navigate product carousel
+      // Collection tabs: horizontal wheel moves carousel; vertical wheel scrolls the page
       if (slideshow.classList.contains('products') && slideshow.closest('.section-collection-tabs')) {
         slideshow.addEventListener('wheel', function (event) {
-          if (event.deltaY === 0) return;
+          const dx = event.deltaX;
+          const dy = event.deltaY;
+          if (Math.abs(dx) <= Math.abs(dy)) return;
           event.preventDefault();
-          if (event.deltaY > 0) {
+          if (dx > 0) {
             flkty.next();
           } else {
             flkty.previous();

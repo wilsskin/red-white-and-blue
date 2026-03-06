@@ -84,11 +84,11 @@
     background: var(--color-bg, #fff); }
     @media only screen and (min-width: 768px) {
       .image-with-text--content {
-        padding: 56px 32px;
+        padding: 64px 48px;
         grid-area: content; } }
     @media only screen and (min-width: 1068px) {
       .image-with-text--content {
-        padding: 80px 48px; } }
+        padding: 80px 64px; } }
     .image-with-text--content--inner {
       max-width: 600px;
       margin: 0 auto; }
@@ -122,10 +122,10 @@
       grid-template-columns: 6fr 4fr; } }
   @media only screen and (min-width: 768px) {
     .image-with-text.grid--image-large {
-      grid-template-columns: 60% 1fr; } }
+      grid-template-columns: 55% 1fr; } }
   @media only screen and (min-width: 768px) {
     .image-with-text.grid--image-large.text_first {
-      grid-template-columns: 1fr 60%; } }
+      grid-template-columns: 1fr 55%; } }
   @media only screen and (min-width: 768px) {
     .image-with-text.grid--image-none {
       gap: 0; }

@@ -1,9 +1,17 @@
 
 
-
-
-/* Hide section-header--button ("Shop collection" / "View all" link) */
-/* .section-featured-collection .section-header--button { display: none !important; } */
+/* Shop collection link: no arrow animation, color #1D58BA → #174695 on hover */
+.featured-collection .section-header--button .text-button {
+  color: #1D58BA; }
+  .featured-collection .section-header--button .text-button svg path {
+    stroke: #1D58BA;
+    transition: stroke 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+  .featured-collection .section-header--button .text-button:hover {
+    color: #174695; }
+  .featured-collection .section-header--button .text-button:hover svg {
+    animation: none; }
+  .featured-collection .section-header--button .text-button:hover svg path {
+    stroke: #174695; }
 
 .featured-collection {
   overflow: hidden; }

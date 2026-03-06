@@ -14,7 +14,7 @@
 .text-with-icons {
   background: var(--color-bg); }
   .text-with-icons.text-with-icons-has-bg--true {
-    padding: 80px 0; }
+    padding: 64px 0; }
   .text-with-icons.text-left {
     text-align: left; }
   .text-with-icons.text-center {
