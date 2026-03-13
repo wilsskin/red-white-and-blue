@@ -166,7 +166,7 @@
         "full_width": false,
         "layout": "text_first",
         "content_position": "text-left",
-        "column_spacing": "small",
+        "column_spacing": "no-gap",
         "color_bg": "#1d58ba",
         "color_text": "#ffffff",
         "color_border": "#e2e2e2",
