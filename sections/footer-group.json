@@ -31,7 +31,7 @@
         "menu-1": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "BROWSE",
             "menu": "left-footer"
           }
@@ -39,25 +39,17 @@
         "menu-2": {
           "type": "menu",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "SHOP",
             "menu": "middle-footer"
-          }
-        },
-        "menu_8pGPNw": {
-          "type": "menu",
-          "settings": {
-            "column_size": "small",
-            "title": "POLICIES",
-            "menu": "right-menu"
           }
         },
         "signup": {
           "type": "signup",
           "settings": {
             "column_size": "medium",
-            "title": "Subscribe to our newsletter",
-            "text": ""
+            "title": "NEWSLETTER",
+            "text": "<p>Get notified of new product releases, sales, and more</p>"
           }
         }
       },
@@ -65,7 +57,6 @@
         "text",
         "menu-1",
         "menu-2",
-        "menu_8pGPNw",
         "signup"
       ],
       "settings": {
