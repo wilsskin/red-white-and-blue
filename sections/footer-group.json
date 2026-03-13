@@ -1,1 +1,84 @@
-{"type":"footer","name":"Footer group","sections":{"footer":{"type":"footer","blocks":{"text":{"type":"text","settings":{"column_size":"small","text_alignment":"center","title":"","image":"shopify:\/\/shop_images\/logo-rwb.png","text":"<p>Red White & Blue<\/p>","text_size":"medium","button_text":"","button_link":"","show_social_links":false}},"menu-1":{"type":"menu","settings":{"column_size":"small","title":"BROWSE","menu":"left-footer"}},"menu-2":{"type":"menu","settings":{"column_size":"small","title":"SHOP","menu":"middle-footer"}},"menu_8pGPNw":{"type":"menu","settings":{"column_size":"small","title":"POLICIES","menu":"right-menu"}},"signup":{"type":"signup","settings":{"column_size":"medium","title":"Subscribe to our newsletter","text":""}}},"block_order":["text","menu-1","menu-2","menu_8pGPNw","signup"],"settings":{"footer_reveal_animation":false,"copyright_text":"","show_language_switcher":false,"show_currency_switcher":false,"show_payment_icons":false,"enable_follow_on_shop":false}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "column_size": "small",
+            "text_alignment": "center",
+            "title": "",
+            "image": "shopify://shop_images/logo-large.png",
+            "text": "",
+            "text_size": "small",
+            "button_text": "",
+            "button_link": "",
+            "show_social_links": false
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "BROWSE",
+            "menu": "left-footer"
+          }
+        },
+        "menu-2": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "SHOP",
+            "menu": "middle-footer"
+          }
+        },
+        "menu_8pGPNw": {
+          "type": "menu",
+          "settings": {
+            "column_size": "small",
+            "title": "POLICIES",
+            "menu": "right-menu"
+          }
+        },
+        "signup": {
+          "type": "signup",
+          "settings": {
+            "column_size": "medium",
+            "title": "Subscribe to our newsletter",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "menu-1",
+        "menu-2",
+        "menu_8pGPNw",
+        "signup"
+      ],
+      "settings": {
+        "footer_reveal_animation": false,
+        "copyright_text": "",
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
+        "show_payment_icons": false,
+        "enable_follow_on_shop": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
