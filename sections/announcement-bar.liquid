@@ -27,17 +27,22 @@
 			assign color_announcement_bar_text = section.blocks[0].settings.color_text
 			assign color_announcement_bar_bg = section.blocks[0].settings.color_bg
 		endif
+
+		assign bar_link = section.settings.bar_link
 	-%}
 	{%- if show_announcement_bar -%}
 		{{- 'announcement-bar.css' | asset_url | stylesheet_tag -}}
-		<div class="announcement-bar" style="--color-announcement-bar-text: {{ color_announcement_bar_text }}; --color-announcement-bar-bg: {{ color_announcement_bar_bg -}};">
+		{%- if bar_link != blank -%}
+			<a href="{{ bar_link }}" class="announcement-bar--bar-link" target="_blank" onclick="if(event.target.closest('.flickity-nav')){ event.preventDefault(); }">
+		{%- endif -%}
+		<div class="announcement-bar{% if bar_link != blank %} announcement-bar--has-bar-link{% endif %}" style="--color-announcement-bar-text: {{ color_announcement_bar_text }}; --color-announcement-bar-bg: {{ color_announcement_bar_bg -}};">
 			<div class="announcement-bar--inner direction-{{ direction }} announcement-bar--{{ announcement_bar_layout }}" style="--marquee-speed: {{ speed }}">
 				{%- if announcement_bar_layout == 'marquee' -%}
 					{%- capture scrolling_text -%}
 						<div>
 						{%- for block in section.blocks -%}
-							<div class="announcement-bar--item{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank %} announcement-bar--item-has-link{% endif %}" {{ block.shopify_attributes }}>
-								{%- if block.settings.link != blank -%}
+							<div class="announcement-bar--item{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank and bar_link == blank %} announcement-bar--item-has-link{% endif %}" {{ block.shopify_attributes }}>
+								{%- if block.settings.link != blank and bar_link == blank -%}
 									<a href="{{ block.settings.link }}" class="announcement-bar--link" target="_blank">
 								{%- endif -%}
 								{%- if block.settings.hover_text != blank -%}
@@ -50,7 +55,7 @@
 								{%- else -%}
 									{%- if block.settings.icon != blank -%}{% render 'svg-icons-inline', icon: block.settings.icon %}{%- endif -%}{{- block.settings.text -}}
 								{%- endif -%}
-								{%- if block.settings.link != blank -%}
+								{%- if block.settings.link != blank and bar_link == blank -%}
 									</a>
 								{%- endif -%}
 							</div>
@@ -61,8 +66,8 @@
 				{%- elsif announcement_bar_layout == 'carousel' -%}
 					<slide-show class="carousel announcement-bar--use-colors-{{ use_block_colors }}" data-autoplay="{{ autoplay }}">
 						{%- for block in section.blocks -%}
-							<div class="announcement-bar--item carousel__slide{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank %} announcement-bar--item-has-link{% endif %}" data-color="{{ block.settings.color_text }}" data-bg="{{ block.settings.color_bg }}" {{ block.shopify_attributes }}>
-								{%- if block.settings.link != blank -%}
+							<div class="announcement-bar--item carousel__slide{% if block.settings.hover_text != blank %} announcement-bar--item-has-hover{% endif %}{% if block.settings.link != blank and bar_link == blank %} announcement-bar--item-has-link{% endif %}" data-color="{{ block.settings.color_text }}" data-bg="{{ block.settings.color_bg }}" {{ block.shopify_attributes }}>
+								{%- if block.settings.link != blank and bar_link == blank -%}
 									<a href="{{ block.settings.link }}" class="announcement-bar--link" target="_blank">
 								{%- endif -%}
 								{%- if block.settings.hover_text != blank -%}
@@ -75,7 +80,7 @@
 								{%- else -%}
 									{%- if block.settings.icon != blank -%}{% render 'svg-icons-inline', icon: block.settings.icon %}{%- endif -%}{{- block.settings.text -}}
 								{%- endif -%}
-								{%- if block.settings.link != blank -%}
+								{%- if block.settings.link != blank and bar_link == blank -%}
 									</a>
 								{%- endif -%}
 							</div>
@@ -88,6 +93,9 @@
 				{%- endif -%}
 			</div>
 		</div>
+		{%- if bar_link != blank -%}
+			</a>
+		{%- endif -%}
 	{%- endif -%}
 {%- endif -%}
 {% schema %}
@@ -107,6 +115,12 @@
 			"id": "announcement_bar_homepage_only",
 			"label": "Show on home page only",
 			"default": false
+		},
+		{
+			"type": "url",
+			"id": "bar_link",
+			"label": "Bar link (entire bar)",
+			"info": "When set, the entire announcement bar is clickable and goes to this link. Block links are ignored."
 		},
 		{
 			"type": "select",

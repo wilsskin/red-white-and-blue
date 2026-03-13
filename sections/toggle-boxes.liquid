@@ -8,7 +8,6 @@
 	assign column_spacing = section.settings.column_spacing
 	assign mobile_swipe = section.settings.mobile_swipe
 	assign image_ratio = section.settings.image_ratio
-	assign text_alignment = section.settings.text_alignment
 
 	assign color_bg = section.settings.color_bg
 	assign color_heading = section.settings.color_heading
@@ -32,37 +31,45 @@
 				if image_ratio == 'adapt' and block.settings.image
 					assign ratio = block.settings.image.aspect_ratio
 				endif
+				assign overlay_color = block.settings.overlay_color
+				assign overlay_opacity = block.settings.overlay_opacity | default: 40
+				if overlay_color != blank
+					assign overlay_rgb = overlay_color.rgb | replace: ' ', ','
+				else
+					assign overlay_rgb = '0,0,0'
+				endif
 			-%}
 			<toggle-box class="toggle-box" {{ block.shopify_attributes }}{% if block.settings.open %} open{%- endif -%}>
-				<figure class="toggle-box--image aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-					{%- if block.settings.image_link != blank -%}
-					<a href="{{ block.settings.image_link }}">
-					{%- endif -%}
-					{%- if block.settings.image -%}
-						{%- liquid
-							assign sizes = '345x0,690x0'
-						-%}
-						{%- render 'responsive-image', image: block.settings.image, sizes: sizes -%}
-					{%- else -%}
-						{% assign index = forloop.index | modulo: 4 | plus: 1 %}
-						<div class="thb-placeholder">
-							{{ 'product-apparel-' | append: index| placeholder_svg_tag: 'placeholder_svg_tag' }}
+				<div class="toggle-box--flip" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+					<button type="button" class="toggle-box--front" aria-label="{{ block.settings.heading | default: 'Toggle' }}">
+						<figure class="toggle-box--image aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+							{%- if block.settings.image -%}
+								{%- liquid
+									assign sizes = '345x0,690x0'
+								-%}
+								{%- render 'responsive-image', image: block.settings.image, sizes: sizes -%}
+							{%- else -%}
+								{% assign index = forloop.index | modulo: 4 | plus: 1 %}
+								<div class="thb-placeholder">
+									{{ 'product-apparel-' | append: index | placeholder_svg_tag: 'placeholder_svg_tag' }}
+								</div>
+							{%- endif -%}
+						</figure>
+						<div class="toggle-box--overlay" style="--overlay-color-rgb: {{ overlay_rgb }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }};"></div>
+						<div class="toggle-box--caption text-{{ block.settings.align_text | default: 'left' }}">
+							{{ block.settings.heading | default: 'Toggle' }}
 						</div>
-					{%- endif -%}
-					{%- if block.settings.image_link != blank -%}
-					</a>
-					{%- endif -%}
-				</figure>
-				<div class="toggle-box--content rte text-{{ text_alignment }}">
-					<scroll-shadow class="toggle-box--content-inner" style="--bg-body-rgb: {{ color_bg.rgb | replace: ' ' , ',' }}">
-						<div>
-							{% if block.settings.text != blank %}
-								{{ block.settings.text | newline_to_br }}
-							{% endif %}
-						</div>
-					</scroll-shadow>
+					</button>
+					<div class="toggle-box--back rte" style="--color-bg: {{ color_bg }}; --color-body: {{ color_text }}; --color-accent: {{ color_link }};">
+						<scroll-shadow class="toggle-box--back-inner" style="--bg-body-rgb: {{ color_bg.rgb | replace: ' ', ',' }}">
+							<div>
+								{% if block.settings.text != blank %}
+									{{ block.settings.text }}
+								{% endif %}
+							</div>
+						</scroll-shadow>
+					</div>
 				</div>
-				<button class="toggle-box--button">{{ block.settings.heading | default: 'Toggle' }} <span></span></button>
 			</toggle-box>
 		{%- endfor -%}
 	</div>
@@ -170,26 +177,6 @@
 	      "label": "Enable swipe on mobile"
 	    },
 			{
-				"type": "select",
-				"id": "text_alignment",
-				"options": [
-					{
-						"value": "left",
-						"label": "Left"
-					},
-					{
-						"value": "center",
-						"label": "Center"
-					},
-					{
-						"value": "right",
-						"label": "Right"
-					}
-				],
-				"default": "left",
-				"label": "Content alignment"
-			},
-			{
 	      "type": "header",
 	      "content": "Colors"
 	    },
@@ -272,6 +259,46 @@
             "label": "Heading",
             "default": "Heading"
           },
+					{
+						"type": "select",
+						"id": "align_text",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left",
+						"label": "Align Text"
+					},
+					{
+						"type": "header",
+						"content": "Overlay"
+					},
+					{
+						"type": "color",
+						"id": "overlay_color",
+						"label": "Overlay color",
+						"default": "#000000"
+					},
+					{
+						"type": "range",
+						"id": "overlay_opacity",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"default": 40,
+						"label": "Overlay opacity"
+					},
 					{
 						"type": "richtext",
 						"id": "text",

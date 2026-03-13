@@ -10,11 +10,19 @@ if (!customElements.get('toggle-box')) {
     }
 
     connectedCallback() {
-      this.button = this.querySelector('.toggle-box--button');
+      const front = this.querySelector('.toggle-box--front');
+      const back = this.querySelector('.toggle-box--back');
 
-      this.button.addEventListener('click', () => {
+      const toggle = () => {
         this.toggleAttribute('open');
-      });
+      };
+
+      if (front) {
+        front.addEventListener('click', toggle);
+      }
+      if (back) {
+        back.addEventListener('click', toggle);
+      }
     }
   }
   customElements.define('toggle-box', ToggleBox);
