@@ -10,6 +10,8 @@
 @media only screen and (min-width: 768px) {
   .footer > .row {
     gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 1068px) {
@@ -24,9 +26,30 @@
   padding-right: 0;
 }
 
+/* Above 768px: width driven by max-width, not percentage */
+@media only screen and (min-width: 768px) {
+  .footer > .row > .columns {
+    flex: 0 0 auto;
+  }
+  .footer > .row > .columns.medium-3 {
+    max-width: 160px;
+  }
+  .footer > .row > .columns.medium-4 {
+    max-width: 180px;
+  }
+}
+@media only screen and (min-width: 1068px) {
+  .footer > .row > .columns.medium-3 {
+    max-width: 180px;
+  }
+  .footer > .row > .columns.medium-4 {
+    max-width: 200px;
+  }
+}
+
 /* Logo column: responsive max-width (same steps as gap), centered */
 .footer > .row > .columns:first-child {
-  max-width: 64px;
+  max-width: 120px;
   margin-left: 0;
   margin-right: 32px;
 }
