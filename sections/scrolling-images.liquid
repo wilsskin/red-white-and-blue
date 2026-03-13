@@ -26,17 +26,26 @@
 								assign ratio = image.aspect_ratio
 							endif
 
-							assign width = '300'
-							assign sizes = '300x'
+							assign width = 400
 							if image
-								assign sizes = image.src.width | append: 'x' | append: image.src.height
-								assign width = image.width | divided_by: 2
+								assign width = image.width | divided_by: 2 | at_most: 400
 							endif
 
 						-%}
 						<div class="scrolling-images--image aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent:{{ 1.0 | divided_by: ratio | times: 100.0 }}%; width: {{ width }}px;">
 							{%- if image -%}
-								{%- render 'responsive-image', image: image, sizes: sizes, retina: 1 -%}
+								<img
+									src="{{ image | image_url: width: 800 }}"
+									srcset="{{ image | image_url: width: 400 }} 400w, {{ image | image_url: width: 800 }} 800w, {{ image | image_url: width: 1200 }} 1200w"
+									sizes="400px"
+									width="{{ width }}"
+									height="{{ width | divided_by: ratio | round }}"
+									loading="eager"
+									decoding="async"
+									fetchpriority="low"
+									alt="{{ image.alt | escape }}"
+									{% if image.presentation.focal_point -%}style="object-position: {{ image.presentation.focal_point }};"{% endif -%}
+								>
 							{%- else -%}
 							<div class="thb-placeholder">
 								{{ 'collection-1' | placeholder_svg_tag }}
@@ -63,6 +72,61 @@
 		{{ scrolling_text }}{{ scrolling_text }}
 	</div>
 </div>
+
+<script>
+  (() => {
+    const root = document.getElementById('scrolling-images-{{ section.id }}');
+    if (!root) return;
+
+    const inner = root.querySelector('.scrolling-images--inner');
+    if (!inner) return;
+
+    const waitForImages = async () => {
+      const imgs = Array.from(inner.querySelectorAll('img'));
+      if (!imgs.length) return;
+      await Promise.all(
+        imgs.map((img) => {
+          if (img.complete) return Promise.resolve();
+          return new Promise((resolve) => {
+            img.addEventListener('load', resolve, { once: true });
+            img.addEventListener('error', resolve, { once: true });
+          });
+        })
+      );
+    };
+
+    const ensureContinuousLoop = () => {
+      const track = inner.querySelector(':scope > div');
+      if (!track) return;
+
+      const trackWidth = track.getBoundingClientRect().width;
+      const containerWidth = inner.getBoundingClientRect().width;
+      if (!trackWidth || !containerWidth) return;
+
+      const minTotal = containerWidth * 2 + trackWidth;
+      let total = trackWidth * inner.children.length;
+      while (total < minTotal) {
+        inner.appendChild(track.cloneNode(true));
+        total += trackWidth;
+      }
+    };
+
+    const init = async () => {
+      await waitForImages();
+      ensureContinuousLoop();
+      inner.classList.add('is-ready');
+    };
+
+    init();
+    window.addEventListener('resize', () => {
+      inner.classList.remove('is-ready');
+      requestAnimationFrame(() => {
+        ensureContinuousLoop();
+        inner.classList.add('is-ready');
+      });
+    });
+  })();
+</script>
 {% schema %}
   {
     "name": "Scrolling images",

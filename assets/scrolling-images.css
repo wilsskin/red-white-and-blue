@@ -19,6 +19,14 @@
     overflow: hidden;
     position: relative;
     z-index: 10; }
+    .scrolling-images--inner > div {
+      will-change: transform;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      transform: translateZ(0);
+      animation-play-state: paused; }
+    .scrolling-images--inner.is-ready > div {
+      animation-play-state: running; }
     .scrolling-images--inner.direction-left > div {
       animation: marquee-left var(--marquee-speed) linear infinite; }
     .scrolling-images--inner.direction-right > div {
@@ -49,10 +57,13 @@
     flex-direction: column; }
   .scrolling-images--image {
     position: relative;
-    max-width: 70vw; }
+    max-width: 200px; }
     @media only screen and (min-width: 768px) {
       .scrolling-images--image {
-        max-width: 100%; } }
+        max-width: 320px; } }
+    @media only screen and (min-width: 1068px) {
+      .scrolling-images--image {
+        max-width: 400px; } }
   .scrolling-images--content {
     margin-top: 30px; }
     .scrolling-images--content h6 {
