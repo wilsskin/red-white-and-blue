@@ -191,7 +191,6 @@
   </div>
   <div class="sub-footer">
     <div class="row">
-      <div class="small-12 columns"><hr></div>
       <div class="small-12 medium-8 columns">
         {% render 'localization',
           id: 'FooterLocalization',
@@ -214,8 +213,7 @@
       <div class="small-12 columns">
         <p>
           &copy; {{ 'now' | date: '%Y' }}
-          {{ shop.name }}, {{ copyright_text }}
-          {{ powered_by_link }}
+          {{ shop.name }}
         </p>
         {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
           <div class="footer--follow-on-shop">

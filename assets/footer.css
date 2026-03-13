@@ -3,17 +3,57 @@
 .footer .thb-widget-menu .sub-menu {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
+/* Footer main row: gap-based layout (replaces column padding) */
+.footer > .row {
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .footer > .row {
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1068px) {
+  .footer > .row {
+    gap: 48px;
+  }
+}
 
+/* Remove column padding so gap controls spacing between items */
+.footer > .row > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Logo column: responsive max-width (same steps as gap), centered */
+.footer > .row > .columns:first-child {
+  max-width: 48px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.footer > .row > .columns:first-child .widget--text img {
+  max-width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .footer > .row > .columns:first-child {
+    max-width: 64px;
+  }
+}
+@media only screen and (min-width: 1068px) {
+  .footer > .row > .columns:first-child {
+    max-width: 80px;
+  }
+}
 
 .footer {
   display: block;
   background: var(--color-footer-bg, var(--color-accent));
-  padding: 45px 0;
+  padding: 45px 24px;
   font-size: 0.9375rem;
   color: var(--color-footer-text, #fff); }
   @media only screen and (min-width: 768px) {
     .footer {
-      padding: 65px 0; } }
+      padding: 65px 32px; } }
   .footer a {
     color: var(--color-footer-link, #fff); }
     .footer a:focus, .footer a:hover {
