@@ -32,7 +32,7 @@
           "type": "menu",
           "settings": {
             "column_size": "medium",
-            "title": "BROWSE",
+            "title": "Collections",
             "menu": "left-footer"
           }
         },
@@ -40,7 +40,7 @@
           "type": "menu",
           "settings": {
             "column_size": "medium",
-            "title": "SHOP",
+            "title": "About",
             "menu": "middle-footer"
           }
         },
@@ -48,7 +48,7 @@
           "type": "signup",
           "settings": {
             "column_size": "medium",
-            "title": "NEWSLETTER",
+            "title": "Newsletter",
             "text": "<p>Get notified of new product releases, sales, and more</p>"
           }
         }
