@@ -9,60 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_Fy7dzP": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_3G9LMJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Feb_10_2026_12_18_54_PM.png",
-            "slide_link": "",
-            "video_background": false,
-            "badge_text": "",
-            "subheading": "",
-            "heading": "About Us",
-            "heading_size": "h1",
-            "content": "",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "color_slidebg": "rgba(0,0,0,0)",
-            "color_slidebg_opacity": 0,
-            "color_slidebg_blur": 0,
-            "color_text": "#ffffff",
-            "color_badge_bg": "#3f72e5",
-            "color_badge_text": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
-            "button_1_text": "",
-            "button_1_color": "accent",
-            "button_1_link": "",
-            "use_text_button_1": false,
-            "button_2_text": "",
-            "button_2_color": "white",
-            "button_2_link": "",
-            "use_text_button_2": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_3G9LMJ"
-      ],
-      "name": "Slideshow",
-      "settings": {
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-500",
-        "full_width": true,
-        "autoplay": true,
-        "autoplay_length": 5,
-        "transition": "zoom",
-        "controls": "arrows-with-numbers",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
-      }
-    },
     "image_with_text_overlay_nmHChf": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -114,7 +60,7 @@
         "text_color": "#FFFFFF",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
-        "disable_top_spacing": false,
+        "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
     },
@@ -432,7 +378,6 @@
     }
   },
   "order": [
-    "slideshow_Fy7dzP",
     "image_with_text_overlay_nmHChf",
     "rich_text_HyjWDj",
     "image_with_text_zfjF3w",
