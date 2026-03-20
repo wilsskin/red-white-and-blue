@@ -215,10 +215,24 @@
 							<div class="thb-filter-title">{{ 'products.facets.sort_by_label' | t }}</div>
 							<label for="SortByMobile" class="visually-hidden">{{ 'products.facets.sort_by_label' | t }}</label>
 							<div class="select">
-								{%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+								{%- assign allowed_sort_values = 'best-selling,manual,created-descending,price-ascending,price-descending' | split: ',' -%}
+								{%- assign sort_by = results.sort_by | default: 'best-selling' -%}
+								{%- unless allowed_sort_values contains sort_by -%}
+									{%- assign sort_by = 'best-selling' -%}
+								{%- endunless -%}
 								<select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortByMobile" aria-describedby="a11y-refresh-page-message">
-									{%- for option in results.sort_options -%}
-										<option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+									{%- for sort_value in allowed_sort_values -%}
+										{%- for option in results.sort_options -%}
+											{%- if option.value == sort_value -%}
+												{%- assign option_name = option.name -%}
+												{%- if option.value == 'best-selling' -%}
+													{%- assign option_name = 'Best sellers' -%}
+												{%- elsif option.value == 'created-descending' -%}
+													{%- assign option_name = 'Newest' -%}
+												{%- endif -%}
+												<option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option_name | escape }}</option>
+											{%- endif -%}
+										{%- endfor -%}
 									{%- endfor -%}
 								</select>
 								<div class="select-arrow" style="transform: rotateX(180deg);">{%- render 'svg-icons' with 'thb-collapsible-arrow' -%}</div>

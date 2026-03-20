@@ -92,10 +92,20 @@
 					<div class="thb-filter-sort">
 						<custom-select class="custom-select" data-auto-close="true">
 							{%- liquid
-								assign sort_by = results.sort_by | default: results.default_sort_by
+								assign allowed_sort_values = 'best-selling,manual,created-descending,price-ascending,price-descending' | split: ','
+								assign sort_by = results.sort_by | default: 'best-selling'
+								unless allowed_sort_values contains sort_by
+									assign sort_by = 'best-selling'
+								endunless
+								assign sort_by_name = 'Best sellers'
 								for option in results.sort_options
 									if option.value == sort_by
 										assign sort_by_name = option.name
+										if option.value == 'best-selling'
+											assign sort_by_name = 'Best sellers'
+										elsif option.value == 'created-descending'
+											assign sort_by_name = 'Newest'
+										endif
 									endif
 								endfor
 							-%}
@@ -103,17 +113,27 @@
 							<div class="custom-select--list">
 								<scroll-shadow>
 									<ul>
-										{%- for option in results.sort_options -%}
-											<li class="custom-select--item" tabindex="-1">
-												<button class="{% if option.value == sort_by %}custom-select--item-active{% endif %}" {% if option.value == sort_by %} aria-current="true"{% endif %} data-value="{{ option.value | escape }}">
-													{{ option.name | escape }}
-												</button>
-											</li>
+										{%- for sort_value in allowed_sort_values -%}
+											{%- for option in results.sort_options -%}
+												{%- if option.value == sort_value -%}
+													{%- assign option_name = option.name -%}
+													{%- if option.value == 'best-selling' -%}
+														{%- assign option_name = 'Best sellers' -%}
+													{%- elsif option.value == 'created-descending' -%}
+														{%- assign option_name = 'Newest' -%}
+													{%- endif -%}
+													<li class="custom-select--item" tabindex="-1">
+														<button class="{% if option.value == sort_by %}custom-select--item-active{% endif %}" {% if option.value == sort_by %} aria-current="true"{% endif %} data-value="{{ option.value | escape }}">
+															{{ option_name | escape }}
+														</button>
+													</li>
+												{%- endif -%}
+											{%- endfor -%}
 										{%- endfor -%}
 									</ul>
 								</scroll-shadow>
 							</div>
-							<input type="hidden" id="SortBy" name="sort_by" value="{{ results.default_sort_by }}">
+							<input type="hidden" id="SortBy" name="sort_by" value="{{ sort_by }}">
 						</custom-select>
 					</div>
 				{%- endif -%}
