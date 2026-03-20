@@ -39,7 +39,7 @@
         "enable_sorting": true,
         "show_counts": true,
         "filter_color_swatches": true,
-        "filters_collapsed": true,
+        "filters_collapsed": false,
         "facets_desktop": "sidebar",
         "box_filter_list": ""
       }
