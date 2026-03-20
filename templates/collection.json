@@ -32,7 +32,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 24,
         "columns_desktop": 4,
         "pagination_type": "paginated",
         "enable_filtering": true,
