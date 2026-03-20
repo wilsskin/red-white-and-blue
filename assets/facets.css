@@ -83,7 +83,11 @@
     align-items: center;
     white-space: nowrap; }
     .facets--bar .thb-filter-sort-count .thb-filter-sort {
-      margin-right: 25px; }
+      margin-right: 0;
+      order: 2; }
+    .facets--bar .thb-filter-sort-count .thb-filter-count {
+      order: 1;
+      margin-right: 24px; }
     .facets--bar .thb-filter-sort-count .select {
       display: none;
       margin: 0; }
