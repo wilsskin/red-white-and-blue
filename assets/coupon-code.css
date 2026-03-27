@@ -34,7 +34,7 @@
       width: 24px; }
   .coupon-code--code {
     display: inline-flex;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid rgba(var(--color-body-rgb), 0.35);
     line-height: 1;
     padding: 4px 10px;
@@ -70,7 +70,7 @@
     white-space: nowrap;
     font-size: 0.75rem;
     padding: 3px 6px;
-    border-radius: 1px;
+    border-radius: 8px;
     opacity: 0;
     pointer-events: none;
     line-height: 1.25; }

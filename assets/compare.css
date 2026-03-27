@@ -9,7 +9,7 @@
 
 
 .product-compare-modal__content, .compare-toggle {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08); }
+  box-shadow: var(--shadow-standard); }
 
 
 .product-compare-modal {
@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   background: var(--color-drawer-bg, #fff);
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25); }
+  box-shadow: var(--shadow-heavy); }
 
 .product-compare-modal__content-info {
   padding: 25px;

@@ -5,7 +5,7 @@
 
 
 .pswp__button {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08); }
+  box-shadow: var(--shadow-standard); }
 
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
@@ -217,7 +217,7 @@
     height: 38px;
     min-width: 38px;
     font-size: 0.9375rem;
-    border-radius: 24px; }
+    border-radius: 16px; }
     @media only screen and (min-width: 1068px) {
       .pswp__button.pswp__counter {
         top: 48px;

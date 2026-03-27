@@ -2,7 +2,7 @@
 
 .promotion-blocks--item {
   isolation: isolate;
-  border-radius: var(--block-border-radius, 8px); }
+  border-radius: var(--block-border-radius, 16px); }
 
 .promotion-blocks--item {
   box-shadow: var(--block-shadows); }
@@ -52,7 +52,7 @@
   width: 100%;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: var(--block-border-radius, 8px) var(--block-border-radius, 8px) 0 0; }
+  border-radius: var(--block-border-radius, 16px) var(--block-border-radius, 16px) 0 0; }
   .promotion-blocks--image img,
   .promotion-blocks--image svg {
     width: 100%;

@@ -24,7 +24,7 @@
   border: 1px solid var(--color-form-border);
   padding: 0 41px;
   position: relative;
-  border-radius: var(--input-border-radius, 6px); }
+  border-radius: var(--input-border-radius, 8px); }
   .page-numbers span {
     display: inline-flex;
     vertical-align: middle;

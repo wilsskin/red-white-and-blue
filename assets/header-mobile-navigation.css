@@ -52,7 +52,7 @@
           content: "";
           width: 4px;
           height: 4px;
-          border-radius: 2px;
+          border-radius: 8px;
           vertical-align: middle;
           margin-right: 11px;
           background: var(--color-links, #d6d8d9);
