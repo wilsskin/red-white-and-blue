@@ -10,7 +10,7 @@
 @media only screen and (min-width: 768px) {
   .footer > .row {
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -46,7 +46,7 @@
   color: var(--color-footer-text, #fff); }
   @media only screen and (min-width: 768px) {
     .footer {
-      padding: 65px 32px; } }
+      padding: 65px 0; } }
   .footer a {
     color: var(--color-footer-link, #fff); }
     .footer a:focus, .footer a:hover {
