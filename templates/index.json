@@ -183,7 +183,7 @@
         "content_width": "medium",
         "content_position": "bottom-left",
         "text_alignment": "left",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "disable_top_spacing": true,

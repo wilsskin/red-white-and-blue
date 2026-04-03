@@ -55,9 +55,11 @@
         "text-2",
         "text-3"
       ],
+      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
+        "bar_link": "",
         "announcement_bar_layout": "carousel",
         "direction": "left",
         "speed": "50s",
@@ -148,7 +150,7 @@
         "sticky_header": false,
         "full_width": false,
         "logo": "shopify://shop_images/logo-rwb.png",
-        "logo_height_range": 32,
+        "logo_height_range": 40,
         "logo_height_range_mobile": 32,
         "style": "style1",
         "header_shadow": "header--shadow-small",
