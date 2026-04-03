@@ -28,7 +28,10 @@
     .animations-false .slideshow__slide {
       clip-path: none !important; }
     .slideshow__slide-heading {
-      font-weight: var(--font-body-bold-weight, 600); }
+      font-weight: 600;
+      letter-spacing: -0.02em; }
+      .slideshow__slide-heading .heading-accent {
+        color: var(--color-accent); }
       .animations-true .slideshow__slide-heading {
         opacity: 0; }
     .slideshow__slide .button-overflow-container {
@@ -48,7 +51,8 @@
           font-size: 0.9375rem; } }
       @media only screen and (min-width: 1068px) {
         .slideshow__slide p.split-text.description-size--large {
-          font-size: 1.0625rem; } }
+          font-size: 1.0625rem;
+          padding-bottom: 24px; } }
     .animations-true .slideshow__slide p.split-text {
       opacity: 0; }
     .animations-true .slideshow__slide .inline-badge {

@@ -345,9 +345,9 @@ h6, .h6 {
 
 h1, .h1, .h1-large, .h1-xlarge {
   font-size: 2.875rem;
-  line-height: 1.45;
+  line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.5rem; }
 
 h2, .h2 {
   font-size: 2.5rem;
@@ -2676,7 +2676,7 @@ h6,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px; }
+  gap: 24px; }
   .thb-full-menu--link {
     color: var(--color-header-links, --color-accent);
     position: relative;
@@ -2767,6 +2767,7 @@ h6,
   .thb-full-menu .sub-menu {
     position: absolute;
     top: calc(100% + 12px);
+    left: 4px;
     font-size: calc(var(--font-navigation-scale, 1) * 16px);
     line-height: 1;
     padding: 8px 0 8px;
@@ -3060,8 +3061,8 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   height: 50px;
-  font-size: 0.9375rem;
-  font-weight: var(--font-body-medium-weight, 500);
+  font-size: 1rem;
+  font-weight: var(--font-body-bold-weight, 600);
   letter-spacing: var(--button-letter-spacing, 0.02em);
   background: var(--solid-button-background, var(--color-accent));
   color: var(--solid-button-label, #fff);
