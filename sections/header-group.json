@@ -150,7 +150,7 @@
         "sticky_header": false,
         "full_width": false,
         "logo": "shopify://shop_images/logo-large.png",
-        "logo_height_range": 48,
+        "logo_height_range": 56,
         "logo_height_range_mobile": 32,
         "style": "style1",
         "header_shadow": "header--shadow-small",
