@@ -562,7 +562,7 @@
         "promotion_Bccxjd": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/wounded-warrior.png",
+            "image": "shopify://shop_images/wounded_warrior_project_logo.jpg",
             "title": "Wounded Warrior Project",
             "block_link": "http://woundedwarriorproject.org"
           }
@@ -570,7 +570,7 @@
         "promotion_nUBLVU": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/ccij_1.png",
+            "image": "shopify://shop_images/HRC_logo.svg",
             "title": "Human Rights Campaign",
             "block_link": "https://hrc.org"
           }
@@ -600,7 +600,7 @@
         "promotion_9kxjyP": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/vote.org.jpg",
             "title": "Vote.org",
             "block_link": "https://Vote.org"
           }
@@ -608,7 +608,7 @@
         "promotion_CnAPXJ": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/women-voters.png",
             "title": "Leauge of Women Voters",
             "block_link": "https://lwv.org"
           }
@@ -616,7 +616,7 @@
         "promotion_DxGwKA": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/planned-parent.png",
             "title": "Planned Parenthood Federation",
             "block_link": "https://plannedparenthood.com"
           }
@@ -624,7 +624,7 @@
         "promotion_EH7kkJ": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/common-cause.webp",
             "title": "Common Cause",
             "block_link": "https://commoncause.org"
           }
