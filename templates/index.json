@@ -637,7 +637,7 @@
       "settings": {
         "mobile_swipe": false,
         "image_ratio": "square",
-        "column_spacing": "medium",
+        "column_spacing": "large",
         "color_bg": "#ffffff",
         "color_text": "#2c2d2e",
         "color_link": "#3f72e5",
