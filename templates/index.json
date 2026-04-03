@@ -583,7 +583,7 @@
       "settings": {
         "mobile_swipe": false,
         "image_ratio": "square",
-        "column_spacing": "large",
+        "column_spacing": "medium",
         "color_bg": "#ffffff",
         "color_text": "#2c2d2e",
         "color_link": "#1d58ba",
@@ -637,7 +637,7 @@
       "settings": {
         "mobile_swipe": false,
         "image_ratio": "square",
-        "column_spacing": "large",
+        "column_spacing": "medium",
         "color_bg": "#ffffff",
         "color_text": "#2c2d2e",
         "color_link": "#3f72e5",
