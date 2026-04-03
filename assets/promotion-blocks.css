@@ -30,15 +30,18 @@
   border: 1px solid #E0E6F0;
   padding: 16px;
   gap: 8px;
-  position: relative; }
+  position: relative;
+  transition: border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+.promotion-blocks--item:hover {
+  border-color: #1D58BA; }
 
 .promotion-blocks--item::after {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: #E0E6F0;
-  border: 1px solid #1D58BA;
+  background: rgba(29, 88, 186, 0.10);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
