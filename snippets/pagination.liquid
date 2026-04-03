@@ -17,7 +17,7 @@
 				<span class="next"><a href="{{ paginate.next.url }}" title="" {% unless paginate.next %}disabled{% endunless %}>{% render 'svg-icons' with 'thb-pagination-next' %}<span class="visually-hidden">{{ 'pagination.next' | t }}</span></a></span>
 		  </div>
 			{%- else -%}
-			<button class="load-more button">
+			<button class="load-more button outline">
 				<span>{{ 'sections.collection_template.load_more' | t }}</span>
 				<span class="loading-overlay">
 					{% render 'svg-icons' with 'thb-loading' %}

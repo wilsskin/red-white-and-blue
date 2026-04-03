@@ -99,6 +99,10 @@
     @media only screen and (min-width: 1068px) {
       .customer-reviews--carousel.flickity-enabled {
         overflow: visible; } }
+    .customer-reviews--carousel,
+    .customer-reviews--carousel .flickity-viewport,
+    .customer-reviews--carousel .carousel__slide {
+      cursor: default !important; }
     @media only screen and (max-width: 767px) {
       .customer-reviews--carousel .flickity-viewport {
         overflow: visible; } }

@@ -32,7 +32,7 @@
 					{%- endif -%}
 				</div>
 				{%- if block.settings.block_link != blank -%}
-					<a href="{{ block.settings.block_link }}" class="promotion-blocks--link" aria-label="{% if block.settings.title != blank %}{{ block.settings.title | escape }}{% else %}View{% endif %}"></a>
+					<a href="{{ block.settings.block_link }}" class="promotion-blocks--link" target="_blank" rel="noopener noreferrer" aria-label="{% if block.settings.title != blank %}{{ block.settings.title | escape }}{% else %}View{% endif %}"></a>
 				{%- endif -%}
 			</div>
 		{%- endfor -%}
