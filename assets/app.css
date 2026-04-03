@@ -2693,7 +2693,7 @@ h6,
     align-items: center; }
     .thb-full-menu > li > a {
       margin: 0;
-      padding: 4px;
+      padding: 8px 4px;
       display: block;
       font-weight: var(--font-body-medium-weight, 500); }
   .thb-full-menu li.menu-item-has-children {
@@ -2711,7 +2711,7 @@ h6,
       .thb-full-menu li.menu-item-has-children:hover:before {
         content: attr(data-item-title);
         position: absolute;
-        height: 100%;
+        height: calc(100% + 8px);
         top: 0;
         margin-left: -30px;
         padding-left: 30px;
@@ -2766,7 +2766,7 @@ h6,
           clip-path: polygon(0 0, 100% 0, 100% calc(100% + 15px), 0 calc(100% + 15px)); }
   .thb-full-menu .sub-menu {
     position: absolute;
-    top: calc(100% + 12px);
+    top: calc(100% + 8px);
     left: 4px;
     font-size: calc(var(--font-navigation-scale, 1) * 16px);
     line-height: 1;
