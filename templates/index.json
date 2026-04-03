@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "spacer_9LrAfG": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 15,
-        "spacer_desktop": 0,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
     "image_with_text_overlay_MJC3Ap": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -647,7 +638,6 @@
     }
   },
   "order": [
-    "spacer_9LrAfG",
     "image_with_text_overlay_MJC3Ap",
     "16614195534fb74bc3",
     "8670c6b1-68f6-405f-bfff-2c6ff1e89099",
