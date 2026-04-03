@@ -18,130 +18,6 @@
         "border_separator_full": false
       }
     },
-    "16479477632637c9a7": {
-      "type": "slideshow",
-      "blocks": {
-        "fe3c4f31-61b1-4931-bde1-e46ecb72a090": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/hero-img.png",
-            "slide_link": "",
-            "video_background": false,
-            "badge_text": "",
-            "subheading": "",
-            "heading": "Freedom Wears BLUE",
-            "heading_size": "h1",
-            "content": "Bold American apparel for people who \nchoose tomorrow over yesterday",
-            "description_size": "large",
-            "content_position": "bottom-left",
-            "text_alignment": "left",
-            "content_size": "medium",
-            "color_slidebg": "rgba(0,0,0,0)",
-            "color_slidebg_opacity": 0,
-            "color_slidebg_blur": 0,
-            "color_text": "#ffffff",
-            "color_badge_bg": "#3f72e5",
-            "color_badge_text": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Now",
-            "button_1_color": "accent",
-            "button_1_link": "",
-            "use_text_button_1": false,
-            "button_2_text": "",
-            "button_2_color": "white",
-            "button_2_link": "",
-            "use_text_button_2": true
-          }
-        },
-        "0aa79bf4-864f-418d-a154-7f4dd2b2614b": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "slide_link": "",
-            "video_background": true,
-            "badge_text": "",
-            "subheading": "Smart Living",
-            "heading": "Control Everything From Your Phone",
-            "heading_size": "h1",
-            "content": "Smartphones are quickly becoming all-empowering devices that can turn your house into a fully controllable smart home.",
-            "description_size": "large",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "color_slidebg": "#6a6a6a",
-            "color_slidebg_opacity": 0,
-            "color_slidebg_blur": 0,
-            "color_text": "#ffffff",
-            "color_badge_bg": "#3f72e5",
-            "color_badge_text": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Now",
-            "button_1_color": "accent",
-            "button_1_link": "",
-            "use_text_button_1": false,
-            "button_2_text": "",
-            "button_2_color": "white",
-            "button_2_link": "",
-            "use_text_button_2": false
-          }
-        },
-        "164794776393e76b8e-2": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "slide_link": "",
-            "video_background": false,
-            "badge_text": "",
-            "subheading": "SECURITY CAMERAS",
-            "heading": "Outdoor Security Cameras With Lights",
-            "heading_size": "h1",
-            "content": "Surround your home with smart security and help stop crime before it happens.",
-            "description_size": "large",
-            "content_position": "middle-left",
-            "text_alignment": "left",
-            "content_size": "medium",
-            "color_slidebg": "rgba(0,0,0,0)",
-            "color_slidebg_opacity": 0,
-            "color_slidebg_blur": 0,
-            "color_text": "#2c2d2e",
-            "color_badge_bg": "#3f72e5",
-            "color_badge_text": "#ffffff",
-            "overlay_color": "rgba(0,0,0,0)",
-            "overlay_opacity": 0,
-            "overlay_gradient": "",
-            "button_1_text": "Buy Now - $45",
-            "button_1_color": "regular",
-            "button_1_link": "",
-            "use_text_button_1": false,
-            "button_2_text": "Learn more",
-            "button_2_color": "regular",
-            "button_2_link": "",
-            "use_text_button_2": true
-          }
-        }
-      },
-      "block_order": [
-        "fe3c4f31-61b1-4931-bde1-e46ecb72a090",
-        "0aa79bf4-864f-418d-a154-7f4dd2b2614b",
-        "164794776393e76b8e-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-500",
-        "full_width": false,
-        "autoplay": true,
-        "autoplay_length": 10,
-        "transition": "zoom",
-        "controls": "arrows-with-numbers",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "image_with_text_overlay_MJC3Ap": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -906,7 +782,6 @@
   },
   "order": [
     "spacer_9LrAfG",
-    "16479477632637c9a7",
     "image_with_text_overlay_MJC3Ap",
     "16614195534fb74bc3",
     "8670c6b1-68f6-405f-bfff-2c6ff1e89099",
