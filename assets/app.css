@@ -2697,7 +2697,7 @@ h6,
         visibility: visible;
         opacity: 1;
         clip-path: inset(0 0 0% 0 round 4px);
-        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), clip-path 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        transition: clip-path 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.35s; }
         .thb-full-menu li.menu-item-has-children:hover > .sub-menu.mega-menu-container {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% + 15px), 0 calc(100% + 15px)); }
       .thb-full-menu li.menu-item-has-children:hover:before {
@@ -4105,7 +4105,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
 .thb-full-menu .sub-menu {
-  transition: opacity 0.15s ease, clip-path 0.15s ease, visibility 0.15s ease; }
+  transition: opacity 0.3s ease, clip-path 0.3s ease, visibility 0.3s ease; }
 
 .side-panel.product-drawer, .thb-full-menu .sub-menu, .custom-select--list {
   isolation: isolate;
