@@ -2759,27 +2759,36 @@ h6,
   .thb-full-menu .sub-menu {
     position: absolute;
     top: 100%;
-    left: -11px;
     font-size: calc(var(--font-navigation-scale, 1) * 16px);
     line-height: 1;
-    padding: 16px 24px;
+    padding: 8px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     background: var(--color-drawer-bg, #fff);
-    border-radius: 8px;
+    border-radius: 4px !important;
     list-style: none;
     margin: 0;
     text-align: left;
     white-space: nowrap;
-    line-height: 1.1;
-    min-width: 190px;
+    line-height: 1.5;
+    min-width: 160px;
+    max-width: 240px;
     opacity: 0;
     z-index: 2;
     visibility: hidden; }
     .thb-full-menu .sub-menu ul {
       line-height: inherit; }
     .thb-full-menu .sub-menu .thb-full-menu--link {
-      display: inline-block;
-      padding-top: 7px;
-      padding-bottom: 7px; }
+      display: block;
+      padding: 8px 24px; }
+    .thb-full-menu .sub-menu .thb-full-menu--link:hover,
+    .thb-full-menu .sub-menu .thb-full-menu--link:focus {
+      color: inherit;
+      background-color: #f5f5f5; }
+      .thb-full-menu .sub-menu .thb-full-menu--link:hover svg path,
+      .thb-full-menu .sub-menu .thb-full-menu--link:focus svg path {
+        stroke: inherit; }
     .thb-full-menu .sub-menu .sub-menu {
       top: -22px;
       left: calc(100% + 35px); }
