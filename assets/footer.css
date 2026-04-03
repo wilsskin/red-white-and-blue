@@ -5,7 +5,7 @@
 
 /* Footer main row: gap-based layout (replaces column padding) */
 .footer > .row {
-  gap: 16px;
+  gap: 24px;
 }
 @media only screen and (min-width: 768px) {
   .footer > .row {
@@ -35,11 +35,14 @@
 /* Column width caps: Logo capped, Collections + About compact, Newsletter fills the rest */
 @media only screen and (min-width: 768px) {
   .footer > .row > .columns:first-child {
-    max-width: 240px;
+    max-width: 160px;
   }
   .footer > .row > .columns:nth-child(2),
   .footer > .row > .columns:nth-child(3) {
     max-width: 160px;
+  }
+  .footer > .row > .columns:nth-child(4) {
+    margin-left: auto;
   }
 }
 .footer > .row > .columns:first-child .widget--text img {
