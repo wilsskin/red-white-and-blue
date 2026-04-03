@@ -89,7 +89,7 @@
 							{%- when 'subheading' -%}
 								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<{{ heading_tag }} class="{{ block.settings.heading_size }} image-with-text-overlay--heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</{{ heading_tag }}>
+								<{{ heading_tag }} class="{{ block.settings.heading_size }} image-with-text-overlay--heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br | replace: 'BLUE', '<span class="heading-accent">BLUE</span>' }}</{{ heading_tag }}>
 							{%- when 'text' -%}
 								<div class="rte description-size--{{ block.settings.description_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}

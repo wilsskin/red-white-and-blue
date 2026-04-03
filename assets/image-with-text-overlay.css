@@ -82,7 +82,11 @@
       .image-with-text-overlay--content-inner.content-width-large {
         max-width: 900px; }
     .image-with-text-overlay--content .image-with-text-overlay--heading {
-      color: var(--text-color, #fff); }
+      color: var(--text-color, #fff);
+      font-weight: 600;
+      letter-spacing: -0.02em; }
+      .image-with-text-overlay--content .image-with-text-overlay--heading .heading-accent {
+        color: var(--color-accent); }
       .animations-true .image-with-text-overlay--content .image-with-text-overlay--heading {
         visibility: hidden;
         will-change: visibility; }
@@ -99,7 +103,8 @@
       .image-with-text-overlay--content .rte.description-size--large {
         font-size: 1.5rem; } }
     .image-with-text-overlay--content .rte p {
-      font-size: inherit; }
+      font-size: inherit;
+      padding-bottom: 32px; }
       .animations-true .image-with-text-overlay--content .rte p {
         visibility: hidden;
         will-change: visibility; }

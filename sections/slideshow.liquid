@@ -171,7 +171,7 @@
 							{% endif %}
 							{% if block.settings.heading != blank %}
 								{% assign slide_link_label = block.settings.heading %}
-								<div class="split-text slideshow__slide-heading {{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br | replace: 'BLUE', '<span class="heading-accent">BLUE</span>' }}</div>
+								<div class="split-text slideshow__slide-heading {{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br }}</div>
 							{% endif %}
 							{% if block.settings.content != blank %}
 							<p class="split-text description-size--{{ block.settings.description_size }}">{{ block.settings.content | newline_to_br }}</p>
