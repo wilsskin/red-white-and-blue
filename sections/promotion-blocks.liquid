@@ -2,7 +2,6 @@
 {%- liquid
 	assign column_spacing = section.settings.column_spacing
 	assign mobile_swipe = section.settings.mobile_swipe
-	assign image_ratio = section.settings.image_ratio
 
 	assign color_bg = section.settings.color_bg
 	assign color_text = section.settings.color_text
@@ -14,25 +13,22 @@
 <div class="promotion-blocks{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --color-accent: {{ color_link }}; --column-size: {{ section.blocks.size }};">
 	<div class="promotion-blocks--inner column-spacing--{{ column_spacing }}">
 		{%- for block in section.blocks -%}
-			{%- liquid
-				assign ratio = 1
-				if image_ratio == 'adapt' and block.settings.image != blank
-					assign ratio = block.settings.image.aspect_ratio
-				endif
-			-%}
 			<div class="promotion-blocks--item" {{ block.shopify_attributes }}>
-				<figure class="promotion-blocks--image">
-					<div class="aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent:{{ 1.0 | divided_by: ratio | times: 100.0 }}%;">
-						{%- if block.settings.image != blank -%}
-							{%- render 'responsive-image', image: block.settings.image, sizes: '690x690,1380x1380' -%}
-						{%- else -%}
-							{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-						{%- endif -%}
-					</div>
-				</figure>
+				<div class="promotion-blocks--image">
+					{%- if block.settings.image != blank -%}
+						{%- render 'responsive-image', image: block.settings.image, sizes: '128x128,256x256' -%}
+					{%- else -%}
+						{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+					{%- endif -%}
+				</div>
 				<div class="promotion-blocks--text">
 					{%- if block.settings.title != blank -%}
 						<h6>{{ block.settings.title }}</h6>
+					{%- endif -%}
+					{%- if block.settings.block_link != blank -%}
+						<span class="promotion-blocks--arrow-icon" aria-hidden="true">
+							{%- render 'svg-icons' with 'arrowlink' -%}
+						</span>
 					{%- endif -%}
 				</div>
 				{%- if block.settings.block_link != blank -%}
