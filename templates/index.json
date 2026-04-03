@@ -546,7 +546,7 @@
         "promotion_fxiqeM": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/aclu.jpg",
             "title": "American Civil Liberties Union",
             "block_link": "https://www.aclu.org/"
           }
@@ -554,7 +554,7 @@
         "promotion_NRfp9q": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/Indivisible__24130056.png",
+            "image": "shopify://shop_images/nilc.jpg",
             "title": "National Immigration Law Center",
             "block_link": "https://nilc.org"
           }
@@ -562,7 +562,7 @@
         "promotion_Bccxjd": {
           "type": "promotion",
           "settings": {
-            "image": "shopify://shop_images/0_gI42PChzIS9fRFI2.jpg",
+            "image": "shopify://shop_images/wounded-warrior.png",
             "title": "Wounded Warrior Project",
             "block_link": "http://woundedwarriorproject.org"
           }
