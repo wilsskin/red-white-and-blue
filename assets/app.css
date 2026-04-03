@@ -2559,7 +2559,7 @@ h6,
 
 .logolink {
   display: inline-flex;
-  margin: 16px 0; }
+  margin: 16px 0 18px; }
   .logolink.text-logo {
     font-size: 1.125rem;
     font-weight: var(--font-body-bold-weight, 600);
