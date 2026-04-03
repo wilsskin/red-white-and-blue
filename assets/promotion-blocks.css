@@ -27,7 +27,7 @@
   background: var(--color-bg, #fff);
   color: var(--color-text, var(--color-body, #2c2d2e));
   border-radius: var(--block-border-radius, 16px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid #E0E6F0;
   padding: 16px;
   gap: 8px;
   position: relative; }
@@ -37,7 +37,8 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: rgba(29, 88, 186, 0.1);
+  background: #E0E6F0;
+  border: 1px solid #1D58BA;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
@@ -72,14 +73,16 @@
   align-items: center;
   gap: 4px;
   flex-shrink: 0;
-  font-size: 0.875rem;
-  font-weight: var(--font-body-medium-weight, 500);
+  font-size: 1rem;
+  font-weight: var(--font-body-medium-weight, 600);
+  font-family: var(--font-body-family, inherit);
   min-width: 0; }
   .promotion-blocks--text h6 {
     margin: 0;
     color: inherit;
-    font-size: inherit;
+    font-size: 1rem;
     font-weight: inherit;
+    font-family: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
