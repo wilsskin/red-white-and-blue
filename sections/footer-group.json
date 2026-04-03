@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "column_size": "small",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "title": "",
             "image": "shopify://shop_images/logo-large.png",
             "text": "",
