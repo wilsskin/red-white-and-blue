@@ -34,7 +34,7 @@
   transition: border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
 .promotion-blocks--item:hover {
-  border-color: #1D58BA; }
+  border-color: #88A6D7; }
 
 .promotion-blocks--item::after {
   content: '';

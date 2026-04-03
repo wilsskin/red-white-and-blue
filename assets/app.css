@@ -3066,7 +3066,7 @@ input[type="submit"] {
   letter-spacing: var(--button-letter-spacing, 0.02em);
   background: var(--solid-button-background, var(--color-accent));
   color: var(--solid-button-label, #fff);
-  border: 0;
+  border: 1px solid #244B96;
   border-radius: var(--button-border-radius, 6px);
   text-align: center;
   position: relative;
