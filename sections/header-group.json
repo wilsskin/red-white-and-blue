@@ -149,7 +149,7 @@
       "settings": {
         "sticky_header": false,
         "full_width": false,
-        "logo": "shopify://shop_images/logo-rwb.png",
+        "logo": "shopify://shop_images/logo-large.png",
         "logo_height_range": 40,
         "logo_height_range_mobile": 32,
         "style": "style1",
