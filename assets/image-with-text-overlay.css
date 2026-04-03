@@ -87,7 +87,7 @@
       letter-spacing: -0.02em; }
       .image-with-text-overlay--content .image-with-text-overlay--heading .heading-accent {
         color: var(--color-accent);
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+        -webkit-text-stroke: 0.3px #fff; }
       .animations-true .image-with-text-overlay--content .image-with-text-overlay--heading {
         visibility: hidden;
         will-change: visibility; }

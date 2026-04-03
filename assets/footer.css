@@ -27,14 +27,12 @@
   }
 }
 
-/* Logo column: fixed 80px, left-anchored */
+/* Logo column: flex equally with other columns */
 .footer > .row > .columns:first-child {
-  flex: 0 0 80px;
-  max-width: 80px;
   margin-left: 0;
 }
 .footer > .row > .columns:first-child .widget--text img {
-  max-width: 100%;
+  max-width: 80px;
   height: auto;
 }
 
@@ -248,6 +246,10 @@
   margin-left: 5px; }
   .footer-payment-icons figure:first-child {
     margin-left: 0; }
+
+.widget--signup p {
+  margin-bottom: 8px;
+}
 
 .signup-container {
   margin-bottom: 0; }
