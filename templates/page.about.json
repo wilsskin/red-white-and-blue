@@ -57,7 +57,7 @@
         "content_width": "medium",
         "content_position": "middle-center",
         "text_alignment": "center",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "disable_top_spacing": true,
@@ -222,6 +222,9 @@
             "image_link": "",
             "open": false,
             "heading": "Freedom",
+            "align_text": "left",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         },
@@ -232,6 +235,9 @@
             "image_link": "",
             "open": false,
             "heading": "Equality",
+            "align_text": "left",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         },
@@ -242,6 +248,9 @@
             "image_link": "",
             "open": false,
             "heading": "Progress",
+            "align_text": "left",
+            "overlay_color": "#000000",
+            "overlay_opacity": 40,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         }
@@ -260,7 +269,6 @@
         "column_spacing": "medium",
         "image_ratio": "adapt",
         "mobile_swipe": true,
-        "text_alignment": "left",
         "color_bg": "#ffffff",
         "color_heading": "#1a1c1d",
         "marker_color": "#fd6262",
@@ -366,7 +374,7 @@
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "content_position": "middle-center",
         "text_alignment": "center",
         "text_color": "#ffffff",
