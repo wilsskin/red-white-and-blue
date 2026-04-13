@@ -505,7 +505,7 @@
         "text_4hPhky": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>Educate yourself! Check out these national resources and make a difference today.</p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
