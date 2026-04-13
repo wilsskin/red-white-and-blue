@@ -178,9 +178,9 @@
           "type": "icon",
           "settings": {
             "icon": "ruler",
-            "image": "shopify://shop_images/icon-handheart.svg",
-            "heading": "Support ActBlue",
-            "text": "<p>5% of all proceeds are donated to progressive charities</p>"
+            "image": "shopify://shop_images/icon-tag.svg",
+            "heading": "High-quality fabric",
+            "text": "<p>Our shirts are sourced from Comfort Colors & Bella+Canvas</p>"
           }
         }
       },
