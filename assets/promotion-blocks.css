@@ -22,6 +22,7 @@
 .promotion-blocks--item {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   background: var(--color-bg, #fff);
   color: var(--color-text, var(--color-body, #2c2d2e));
   border-radius: var(--block-border-radius, 16px);
