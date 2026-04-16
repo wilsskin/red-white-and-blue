@@ -160,7 +160,7 @@
       color: var(--color-heading, #1a1c1d);
       margin-bottom: 8px; }
     .customer-reviews--review p {
-      font-size: 1.5rem;
+      font-size: 20px;
       line-height: 1.5; }
     .customer-reviews--review > *:last-child {
       margin-bottom: 0; }

@@ -12,14 +12,9 @@
 .promotion-blocks--inner {
   display: grid;
   width: 100%;
-  padding-bottom: 32px; }
-  @media only screen and (min-width: 768px) {
-    .promotion-blocks--inner {
-      grid-template-columns: repeat(var(--column-size, 3), 1fr); } }
-  @media only screen and (max-width: 767px) {
-    .promotion-blocks--inner {
-      gap: 16px;
-      grid-template-columns: repeat(2, 1fr); } }
+  padding-bottom: 32px;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--promo-block-min-width, 200px), 1fr)); }
 
 .promotion-blocks--item {
   display: flex;
@@ -32,9 +27,6 @@
   gap: 8px;
   position: relative;
   transition: border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
-
-.promotion-blocks--item:hover {
-  border-color: #88A6D7; }
 
 .promotion-blocks--item::after {
   content: '';
