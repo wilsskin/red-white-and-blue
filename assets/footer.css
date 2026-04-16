@@ -3,27 +3,12 @@
 .footer .thb-widget-menu .sub-menu {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
-/* Neutralize app.css global row padding — .footer itself carries the 15px/50px side padding */
-.footer .row {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Footer main row: gap-based layout (replaces column padding) */
-.footer > .row {
-  gap: 24px;
-}
+/* Footer columns: spread across the row at tablet+ */
 @media only screen and (min-width: 768px) {
   .footer > .row {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-}
-
-/* Remove column padding so gap controls spacing between items */
-.footer > .row > .columns {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 /* Above 768px: columns fill remaining width equally */
@@ -59,12 +44,12 @@
 .footer {
   display: block;
   background: var(--color-footer-bg, var(--color-accent));
-  padding: 45px 15px;
+  padding: 45px 0;
   font-size: 0.9375rem;
   color: var(--color-footer-text, #fff); }
   @media only screen and (min-width: 768px) {
     .footer {
-      padding: 65px 50px; } }
+      padding: 65px 0; } }
   .footer a {
     color: var(--color-footer-link, #fff); }
     .footer a:focus, .footer a:hover {
