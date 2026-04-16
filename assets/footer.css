@@ -53,12 +53,12 @@
 .footer {
   display: block;
   background: var(--color-footer-bg, var(--color-accent));
-  padding: 45px 24px;
+  padding: 45px 15px;
   font-size: 0.9375rem;
   color: var(--color-footer-text, #fff); }
   @media only screen and (min-width: 768px) {
     .footer {
-      padding: 65px 0; } }
+      padding: 65px 50px; } }
   .footer a {
     color: var(--color-footer-link, #fff); }
     .footer a:focus, .footer a:hover {

@@ -134,6 +134,104 @@ Note: `--logo-height` is written as an inline `{% style %}` tag inside `sections
 
 ---
 
+## Content Width and Side Padding System
+
+This is the most common source of misalignment bugs. Every section that renders content inside the page grid must follow this exact pattern — no exceptions.
+
+### How the grid is structured
+
+The Foundation 6 `.row` class (defined in `app.css`) is the centering container:
+```css
+.row {
+  max-width: var(--grid-width-row, 1380px);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+```
+
+The `.row` constrains content to 1380px and centers it. But **it carries no horizontal padding itself** — that is the responsibility of the content wrapper inside each section.
+
+### The inner-wrapper padding rule
+
+Every section that constrains its content uses an `--inner` wrapper (or equivalent element) with this exact CSS:
+
+```css
+.section-name--inner {          /* or .footer, .sub-footer > .row, etc. */
+  padding: 0 15px;              /* mobile: 15px side padding */
+  max-width: var(--grid-width-row, 1380px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-name--inner {
+    padding: 0 50px;            /* desktop: 50px side padding */
+  }
+}
+```
+
+**Breakpoints:**
+
+| Breakpoint | Side padding | Notes |
+|---|---|---|
+| `< 768px` (mobile) | `15px` each side | Matches Foundation's column gutter |
+| `≥ 768px` (tablet/desktop) | `50px` each side | Applied in a single `min-width: 768px` media query |
+
+There is no intermediate breakpoint for side padding — it jumps directly from 15px to 50px at 768px. Do not add a third value.
+
+### Full-width backgrounds with contained content
+
+Some sections (footer, announcement bar, email signup) have a background color that spans the full viewport width. In these cases:
+
+- The **outer element** (e.g. `.footer`) carries the background color and vertical padding only — no horizontal padding.
+- Horizontal padding is applied to its **direct content children** (the `.row` or `--inner` wrapper).
+
+Example — the footer:
+```css
+.footer {
+  padding: 45px 15px;           /* vertical + mobile side padding */
+  background: var(--color-footer-bg);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 65px 50px;         /* vertical + desktop side padding */
+  }
+}
+```
+
+Because `.footer` wraps both the main `.row` and the `.sub-footer` div as direct children, applying padding to `.footer` aligns all content inside it in one place.
+
+### Sections that use `--inner` wrappers
+
+Sections whose outer element does not have a background (or whose background should not bleed to viewport edges) use a dedicated `--inner` wrapper. Verified examples from `assets/`:
+
+| Section | Inner wrapper class |
+|---|---|
+| `email-signup.css` | `.email-signup--inner` |
+| `breadcrumbs.css` | `.breadcrumbs--inner` |
+| `announcement-bar.css` | `.announcement-bar--inner` |
+| `logo-list.css` | `.logo-list--inner` |
+| `video.css` | `.video--inner` |
+| `text-with-icons.css` | `.text-with-icons--inner` |
+| `scrolling-content.css` | `.scrolling-content--inner` |
+| `media-grid.css` | `.media-grid--inner` |
+| `toggle-boxes.css` | `.toggle-boxes--inner` |
+| `promotion-blocks.css` | `.promotion-blocks--inner` |
+
+All of these follow the identical `padding: 0 15px` → `padding: 0 50px` pattern above.
+
+### What NOT to do
+
+- Do not use `padding: 0 24px` or any value other than `15px` / `50px` for side padding — these will be out of alignment with the grid.
+- Do not add side padding to `.row` directly — `.row` is a shared Foundation class used across the entire theme.
+- Do not use `max-width: var(--grid-width, 1200px)` for section content — use `--grid-width-row` (1380px). The narrower `--grid-width` is for specific inner content like slideshow text overlays.
+- Do not use `max-width` queries for side padding — always use `min-width: 768px` (mobile-first).
+
+---
+
 ## JavaScript Architecture
 
 No framework, no bundler. Each feature is a standalone file loaded via `<script>` in `theme.liquid` or conditionally inside section files.
