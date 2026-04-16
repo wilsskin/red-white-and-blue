@@ -3,6 +3,12 @@
 .footer .thb-widget-menu .sub-menu {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
+/* Neutralize app.css global row padding — .footer itself carries the 15px/50px side padding */
+.footer .row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Footer main row: gap-based layout (replaces column padding) */
 .footer > .row {
   gap: 24px;
