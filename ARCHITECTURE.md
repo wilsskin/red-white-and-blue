@@ -136,12 +136,14 @@ Note: `--logo-height` is written as an inline `{% style %}` tag inside `sections
 
 ## Content Width and Side Padding System
 
-This is the most common source of misalignment bugs. Every section that renders content inside the page grid must follow this exact pattern — no exceptions.
+This is the most common source of misalignment bugs. Read every word before touching layout.
 
-### How the grid is structured
+### How the grid actually works
 
-The Foundation 6 `.row` class (defined in `app.css`) is the centering container:
+`app.css` defines the Foundation 6 `.row` class as the centering container **and also patches it with horizontal padding**:
+
 ```css
+/* Foundation base — max-width + centering */
 .row {
   max-width: var(--grid-width-row, 1380px);
   margin-left: auto;
@@ -149,86 +151,170 @@ The Foundation 6 `.row` class (defined in `app.css`) is the centering container:
   display: flex;
   flex-flow: row wrap;
 }
+
+/* app.css custom patch — horizontal padding on the row itself */
+.row {
+  padding: 0 11px;              /* mobile */
+}
+@media only screen and (min-width: 768px) {
+  .row {
+    padding: 0 35px;            /* tablet/desktop */
+  }
+}
+
+/* Foundation column gutters */
+.row .columns {
+  padding: 0 4px;               /* mobile */
+}
+@media only screen and (min-width: 768px) {
+  .row .columns {
+    padding: 0 15px;            /* tablet/desktop */
+  }
+}
 ```
 
-The `.row` constrains content to 1380px and centers it. But **it carries no horizontal padding itself** — that is the responsibility of the content wrapper inside each section.
+**Combined effect:** `.row` + `.columns` produce exactly **15px** side offset on mobile and **50px** on desktop from the viewport edge, at any viewport width up to 1380px. Above 1380px, `.row` hits its max-width and centers with auto margins — the content offset grows proportionally.
 
-### The inner-wrapper padding rule
+### The three layout patterns
 
-Every section that constrains its content uses an `--inner` wrapper (or equivalent element) with this exact CSS:
+Every section in this theme uses one of three patterns. All three produce identical content edges.
+
+---
+
+**Pattern 1 — Standard (most sections)**
+
+The outer section element has no horizontal padding. A `.row` inside handles centering and padding. `.columns` inside `.row` handle column gutters.
+
+```html
+<div class="my-section">          <!-- no horizontal padding -->
+  <div class="row">               <!-- 11px/35px side padding + max-width 1380px centered -->
+    <div class="columns">         <!-- 4px/15px column padding -->
+      content
+    </div>
+  </div>
+</div>
+```
+
+This is the default. Use it for any section whose outer element has no background color or whose background doesn't need to span the full viewport.
+
+---
+
+**Pattern 2 — Full-bleed background**
+
+The outer element provides the full-viewport background color and vertical padding. Horizontal alignment is handled entirely by the `.row` inside — **no horizontal padding on the outer element**.
+
+```html
+<div class="my-section">          <!-- background + vertical padding ONLY — no horizontal padding -->
+  <div class="row">               <!-- 11px/35px + max-width 1380px — same as Pattern 1 -->
+    <div class="columns">         <!-- 4px/15px column padding -->
+      content
+    </div>
+  </div>
+</div>
+```
 
 ```css
-.section-name--inner {          /* or .footer, .sub-footer > .row, etc. */
-  padding: 0 15px;              /* mobile: 15px side padding */
+.my-section {
+  background: var(--color-accent);
+  padding: 45px 0;               /* vertical only — NO horizontal padding */
+}
+
+@media only screen and (min-width: 768px) {
+  .my-section {
+    padding: 65px 0;             /* vertical only — NO horizontal padding */
+  }
+}
+```
+
+**The footer uses this pattern.** `assets/footer.css` sets `padding: 45px 0` / `padding: 65px 0` — zero horizontal padding.
+
+> **⚠ Critical trap:** Adding horizontal padding to the outer element AND using a `.row` inside creates double padding. At viewport widths ≤ 1380px the `.row` fills its container, so the outer padding just shifts content inward. At viewports > 1380px the `.row` centers with auto margins within the already-padded space — the offset diverges from all other sections. This was a hard-won lesson from a multi-hour debugging session. Never add horizontal padding to the outer element when a `.row` is the direct child.
+
+---
+
+**Pattern 3 — `--inner` wrapper (some special sections)**
+
+Used when the outer container opts completely out of the `.row` padding system (e.g. uses `full-width-row-full`). A dedicated `--inner` div provides both the horizontal padding and the max-width centering directly.
+
+```html
+<div class="row full-width-row-full">   <!-- no padding, no max-width — completely neutral -->
+  <div class="columns">
+    <div class="email-signup--inner">   <!-- padding 0 15px/50px + max-width 1380px centered -->
+      content
+    </div>
+  </div>
+</div>
+```
+
+```css
+.email-signup--inner {
+  padding: 0 15px;
   max-width: var(--grid-width-row, 1380px);
   margin-left: auto;
   margin-right: auto;
 }
-
 @media only screen and (min-width: 768px) {
-  .section-name--inner {
-    padding: 0 50px;            /* desktop: 50px side padding */
+  .email-signup--inner {
+    padding: 0 50px;
   }
 }
 ```
 
-**Breakpoints:**
+Sections that use this pattern: `email-signup.css`, `breadcrumbs.css`, `announcement-bar.css`, `logo-list.css`, `video.css`, `text-with-icons.css`, `scrolling-content.css`, `media-grid.css`, `toggle-boxes.css`, `promotion-blocks.css`.
 
-| Breakpoint | Side padding | Notes |
-|---|---|---|
-| `< 768px` (mobile) | `15px` each side | Matches Foundation's column gutter |
-| `≥ 768px` (tablet/desktop) | `50px` each side | Applied in a single `min-width: 768px` media query |
+---
 
-There is no intermediate breakpoint for side padding — it jumps directly from 15px to 50px at 768px. Do not add a third value.
+### The header is different — do not copy its pattern for body sections
 
-### Full-width backgrounds with contained content
+The header uses a unique `--inner` wrapper with a **narrower** max-width:
 
-Some sections (footer, announcement bar, email signup) have a background color that spans the full viewport width. In these cases:
-
-- The **outer element** (e.g. `.footer`) carries the background color and vertical padding only — no horizontal padding.
-- Horizontal padding is applied to its **direct content children** (the `.row` or `--inner` wrapper).
-
-Example — the footer:
 ```css
-.footer {
-  padding: 45px 15px;           /* vertical + mobile side padding */
-  background: var(--color-footer-bg);
+.header {
+  padding: 0 15px;               /* mobile */
 }
-
 @media only screen and (min-width: 768px) {
-  .footer {
-    padding: 65px 50px;         /* vertical + desktop side padding */
+  .header {
+    padding: 0 50px;             /* desktop */
   }
+}
+.header--inner {
+  max-width: var(--grid-width, 1280px);   /* narrower than --grid-width-row */
+  margin: 0 auto;
+  /* no padding — padding is on .header */
 }
 ```
 
-Because `.footer` wraps both the main `.row` and the `.sub-footer` div as direct children, applying padding to `.footer` aligns all content inside it in one place.
+The header content is constrained to `--grid-width` (1280px), not `--grid-width-row` (1380px). This works because `.header--inner` has no padding of its own, so there is no double-padding problem. **Do not replicate this for body sections** — it uses a different max-width variable and doesn't use `.row` or `.columns`.
 
-### Sections that use `--inner` wrappers
+---
 
-Sections whose outer element does not have a background (or whose background should not bleed to viewport edges) use a dedicated `--inner` wrapper. Verified examples from `assets/`:
+### Alignment proof
 
-| Section | Inner wrapper class |
-|---|---|
-| `email-signup.css` | `.email-signup--inner` |
-| `breadcrumbs.css` | `.breadcrumbs--inner` |
-| `announcement-bar.css` | `.announcement-bar--inner` |
-| `logo-list.css` | `.logo-list--inner` |
-| `video.css` | `.video--inner` |
-| `text-with-icons.css` | `.text-with-icons--inner` |
-| `scrolling-content.css` | `.scrolling-content--inner` |
-| `media-grid.css` | `.media-grid--inner` |
-| `toggle-boxes.css` | `.toggle-boxes--inner` |
-| `promotion-blocks.css` | `.promotion-blocks--inner` |
+At any viewport width, all three patterns produce identical content edges:
 
-All of these follow the identical `padding: 0 15px` → `padding: 0 50px` pattern above.
+| Viewport | Pattern 1 & 2 | Pattern 3 (`--inner`) |
+|---|---|---|
+| 375px mobile | `11 + 4 = 15px` from edge | `15px` from edge |
+| 768px tablet | `35 + 15 = 50px` from edge | `50px` from edge |
+| 1380px desktop | `35 + 15 = 50px` from edge | `50px` from edge |
+| 1440px desktop | `30 (margin) + 35 + 15 = 80px` from edge | `30 + 50 = 80px` from edge |
+| 1600px desktop | `110 + 35 + 15 = 160px` from edge | `110 + 50 = 160px` from edge |
 
-### What NOT to do
+---
 
-- Do not use `padding: 0 24px` or any value other than `15px` / `50px` for side padding — these will be out of alignment with the grid.
-- Do not add side padding to `.row` directly — `.row` is a shared Foundation class used across the entire theme.
-- Do not use `max-width: var(--grid-width, 1200px)` for section content — use `--grid-width-row` (1380px). The narrower `--grid-width` is for specific inner content like slideshow text overlays.
-- Do not use `max-width` queries for side padding — always use `min-width: 768px` (mobile-first).
+### Rules — follow exactly
+
+1. **Never add horizontal padding to a full-bleed outer element that contains a `.row`.** The `.row` handles all horizontal spacing. Adding padding to the outer element too creates double padding that misaligns at wide viewports.
+
+2. **Never add horizontal padding directly to `.row`.** It is a shared Foundation class used across the entire theme. The custom patch in `app.css` (11px/35px) already handles this.
+
+3. **The only valid side padding values are 15px (mobile) and 50px (desktop).** No other values. No intermediate breakpoints.
+
+4. **Always use `min-width: 768px` for the desktop padding media query** — never `max-width`.
+
+5. **Use `--grid-width-row` (1380px) for body section max-widths.** The narrower `--grid-width` (1280px) is for the header and specific inner content like slideshow text overlays only.
+
+6. **When in doubt, use Pattern 1.** Add a background and vertical-only padding to the outer element if needed (Pattern 2). Reach for Pattern 3 only if the section already uses `full-width-row-full` in its Liquid.
 
 ---
 
