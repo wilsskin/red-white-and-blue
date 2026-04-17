@@ -45,7 +45,7 @@
         "image": "shopify://shop_images/hero-img.png",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-450",
+        "mobile_height": "mobile-height-400",
         "full_width": true,
         "content_width": "medium",
         "content_position": "bottom-left",
