@@ -224,7 +224,7 @@
             "heading": "Freedom",
             "align_text": "left",
             "overlay_color": "#000000",
-            "overlay_opacity": 40,
+            "overlay_opacity": 80,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         },
