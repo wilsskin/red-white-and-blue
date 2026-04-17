@@ -223,8 +223,8 @@
             "open": false,
             "heading": "Freedom",
             "align_text": "left",
-            "overlay_color": "#000000",
-            "overlay_opacity": 80,
+            "overlay_color": "#ed3537",
+            "overlay_opacity": 20,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         },
@@ -236,8 +236,8 @@
             "open": false,
             "heading": "Equality",
             "align_text": "left",
-            "overlay_color": "#000000",
-            "overlay_opacity": 40,
+            "overlay_color": "#fafafa",
+            "overlay_opacity": 20,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         },
@@ -249,8 +249,8 @@
             "open": false,
             "heading": "Progress",
             "align_text": "left",
-            "overlay_color": "#000000",
-            "overlay_opacity": 40,
+            "overlay_color": "#1d58ba",
+            "overlay_opacity": 20,
             "text": "<p>Pair text with an image to focus on your chosen image</p>"
           }
         }
