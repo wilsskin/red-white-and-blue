@@ -1,7 +1,7 @@
 .toggle-box {
   display: block;
   isolation: isolate;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: var(--block-shadows);
 }
 
@@ -117,7 +117,7 @@
 }
 .toggle-box--back-inner div {
   height: 100%;
-  padding: 30px;
+  padding: 32px;
   overflow-y: auto;
 }
 .toggle-box--back-inner div > *:last-child {
@@ -166,10 +166,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 8px;
+  bottom: 16px;
   z-index: 12;
-  padding: 0 16px;
-  color: var(--color-heading, #1a1c1d);
+  padding: 0 24px;
+  color: #ffffff;
   font-weight: var(--font-body-medium-weight, 500);
   line-height: 1.2;
 }
