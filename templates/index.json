@@ -63,7 +63,7 @@
         "1661419552da8d37a7-0": {
           "type": "collection",
           "settings": {
-            "collection": "best-sellers",
+            "collection": "best-sellers-1",
             "tab_button_label": "Shop All",
             "tab_button_link": "",
             "enable_promotion": false,
