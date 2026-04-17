@@ -16,18 +16,18 @@
 
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
-	assign columns_class = 'small-6 medium-6 large-4'
+	assign columns_class = 'small-6 medium-4'
 	case columns_desktop
 		when 2
 			assign columns_class = 'small-6 medium-6'
 		when 3
 			assign columns_class = 'small-6 medium-4'
 		when 4
-			assign columns_class = 'small-6 medium-6 large-3'
+			assign columns_class = 'small-6 medium-3'
 		when 5
-			assign columns_class = 'small-6 medium-3 large-1/5'
+			assign columns_class = 'small-6 medium-1/5'
 		when 6
-			assign columns_class = 'small-6 medium-3 large-2'
+			assign columns_class = 'small-6 medium-2'
 	endcase
 
 	if featured_collection.all_products_count > product_limit
