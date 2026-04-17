@@ -85,8 +85,11 @@
       color: var(--text-color, #fff);
       font-weight: 600;
       letter-spacing: -0.02em;
-      line-height: 1.15;
       overflow: visible; }
+    .image-with-text-overlay--content .image-with-text-overlay--heading .line-child > div {
+      overflow: visible;
+      padding-bottom: 0.15em;
+      margin-bottom: -0.15em; }
       .image-with-text-overlay--content .image-with-text-overlay--heading .heading-accent {
         color: var(--color-accent);
         -webkit-text-stroke: 1.6px #CAD6E9;
