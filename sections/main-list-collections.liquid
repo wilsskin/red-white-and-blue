@@ -39,14 +39,11 @@
 					      assign collections = collections | reverse
 					    endif
 					  -%}
-						{%- paginate collections by collection_list_pagination_num -%}
-							<div class="collection-grid">
+						<div class="collection-grid">
 								{% for collection in collections %}
 									{% render 'collection-card', grid_collection: collection, media_aspect_ratio: section.settings.image_ratio, style: style, index: forloop.index, columns_desktop: columns_desktop, heading_position: heading_position, heading_size: heading_size, text_alignment: text_alignment %}
 								{% endfor %}
 							</div>
-							{% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
-						{%- endpaginate -%}
 					{% endif %}
 			  </div>
 			</div>

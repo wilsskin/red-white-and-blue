@@ -5,7 +5,7 @@
 
 .collection-card--image {
   isolation: isolate;
-  border-radius: var(--block-border-radius, 16px); }
+  border-radius: 8px; }
 
 .collection-card--image {
   box-shadow: var(--block-shadows); }
@@ -18,11 +18,11 @@
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px 10px; }
+  gap: 24px 16px; }
   @media only screen and (min-width: 768px) {
     .collection-grid {
       grid-template-columns: repeat(var(--var-collection-list-columns), 1fr);
-      gap: 30px; } }
+      gap: 24px; } }
   @media only screen and (max-width: 767px) {
     .collection-grid.swipe-on-mobile {
       display: grid;
@@ -32,9 +32,9 @@
       grid-template-columns: repeat(auto-fill, minmax(var(--mobile-swipe-width), 1fr));
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
-      margin-left: -15px;
+      margin-left: -16px;
       width: calc(100% + 30px);
-      padding: 0 15px; }
+      padding: 0 16px; }
       .collection-grid.swipe-on-mobile::-webkit-scrollbar {
         display: none; }
       .collection-grid.swipe-on-mobile .collection-card {
@@ -51,7 +51,7 @@
       width: 100%; }
     @media only screen and (min-width: 768px) {
       .collection-grid__carousel {
-        margin: 0 -15px; } }
+        margin: 0 -16px; } }
     @media only screen and (max-width: 767px) {
       .collection-grid__carousel .flickity-slider {
         margin: 0 -4px;
@@ -92,12 +92,13 @@
     word-break: break-word; }
     .collection-card--content p {
       display: block;
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 0.8125rem;
       margin-bottom: 0;
       overflow: hidden;
       display: -webkit-box;
       -webkit-line-clamp: 3;
+      line-clamp: 3;
       -webkit-box-orient: vertical; }
   .collection-card--image {
     position: relative;
@@ -134,7 +135,7 @@
       pointer-events: none;
       background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
   .collection-card.style1 .collection-card--image {
-    margin-bottom: 20px; }
+    margin-bottom: 24px; }
   .collection-card.style1 .collection-card--content .collection-card--link {
     display: inline-block;
     margin: 0;
@@ -148,7 +149,7 @@
     left: 0;
     right: 0;
     z-index: 10;
-    padding: 20px;
+    padding: 24px;
     display: flex; }
     .collection-card.style2 .collection-card--content .collection-card--link {
       display: flex; }

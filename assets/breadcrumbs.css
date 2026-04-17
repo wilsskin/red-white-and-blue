@@ -15,7 +15,7 @@
   margin-top: 0; }
 
 .breadcrumbs-section + .section-template-header .template-header {
-  padding-top: 15px; }
+  padding-top: 16px; }
 
 .breadcrumbs-section scroll-shadow {
   width: 100%; }
@@ -23,7 +23,7 @@
 .breadcrumbs {
   font-size: 0.75rem;
   overflow-x: scroll;
-  padding: 15px 0;
+  padding: 16px 0;
   display: inline-flex;
   width: 100%;
   white-space: nowrap;
@@ -32,7 +32,7 @@
   scrollbar-width: none; }
   @media only screen and (min-width: 768px) {
     .breadcrumbs {
-      padding: 15px 0;
+      padding: 16px 0;
       overflow-x: hidden; } }
   .breadcrumbs::-webkit-scrollbar {
     display: none; }
