@@ -22,7 +22,7 @@
         "text_BHwiDf": {
           "type": "text",
           "settings": {
-            "text": "<p>Bold American apparel for people who choose tomorrow over yesterday</p>",
+            "text": "<p><strong>Classic American apparel.</strong><br/><strong>Modern American values.</strong></p>",
             "description_size": "medium"
           }
         },
@@ -116,7 +116,7 @@
         "heading_kjB4GF": {
           "type": "heading",
           "settings": {
-            "text": "Restore our American Freedom",
+            "text": "FREEDOM. EQUALITY. .JUSTICE FOR ALL.",
             "marker_style": "style1",
             "heading_size": "h2",
             "marker_color": "#ffffff"
@@ -125,7 +125,7 @@
         "text_Te6QjH": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re here to remind everyone who invented the damn freedom brand in the first place. We did!</p><p><strong>Progressives. Liberals. Democrats.</strong></p>"
+            "text": "<p><strong>Bold American apparel for the liberals who know that we are the</strong></p>"
           }
         }
       },
