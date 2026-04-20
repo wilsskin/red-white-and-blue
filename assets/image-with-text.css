@@ -156,20 +156,28 @@
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; } }
   .image-with-text.column-spacing--no-gap .image-with-text--image-media {
+    border-top-left-radius: var(--block-border-radius, 16px);
+    border-top-right-radius: var(--block-border-radius, 16px);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
 
   .image-with-text.column-spacing--no-gap .image-with-text--content {
     border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--block-border-radius, 16px);
+    border-bottom-right-radius: var(--block-border-radius, 16px); }
 
   .image-with-text.column-spacing--no-gap.text_first .image-with-text--content {
+    border-top-left-radius: var(--block-border-radius, 16px);
+    border-top-right-radius: var(--block-border-radius, 16px);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
 
   .image-with-text.column-spacing--no-gap.text_first .image-with-text--image-media {
     border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--block-border-radius, 16px);
+    border-bottom-right-radius: var(--block-border-radius, 16px); }
 
   @media only screen and (min-width: 768px) {
     .image-with-text.column-spacing--no-gap {
