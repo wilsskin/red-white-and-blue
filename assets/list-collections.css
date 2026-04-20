@@ -140,8 +140,9 @@
     display: inline-block;
     margin: 0;
     height: auto; }
-  .collection-card.style1:hover img, .collection-card.style1:focus img {
-    transform: scale(1.05); }
+  .collection-card.style1:hover .collection-card--image:after,
+  .collection-card.style1:focus .collection-card--image:after {
+    background: rgba(29, 88, 186, 0.2); }
   .collection-card.style2 .collection-card--content {
     position: absolute;
     top: 0;
