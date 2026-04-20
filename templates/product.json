@@ -71,6 +71,7 @@
         },
         "386f7e4a-6127-4141-928b-9cb4614ee18c": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "open": false,
@@ -81,6 +82,7 @@
         },
         "d56924f2-0137-4e3b-8c33-49b1f28391c6": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Compatibility",
             "open": false,
