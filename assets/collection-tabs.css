@@ -37,7 +37,7 @@
     white-space: nowrap;
     gap: 10px;
     scrollbar-width: none;
-    margin-top: 15px; }
+    margin-top: 0px; }
     .collection-tabs__list::-webkit-scrollbar {
       display: none; }
     .collection-tabs__list-link + .collection-tabs__list-link {
