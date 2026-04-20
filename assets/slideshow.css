@@ -206,6 +206,18 @@
       .slideshow__slide-content .button {
         position: relative;
         z-index: 22; }
+      .slideshow__slide-content .button:not(.white):not(.outline) {
+        border: none;
+        box-shadow:
+          0px 0px 0px 1px rgba(0, 0, 0, 0.06),
+          0px 1px 2px -1px rgba(0, 0, 0, 0.06),
+          0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+        transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), box-shadow 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+      .slideshow__slide-content .button:not(.white):not(.outline):hover {
+        box-shadow:
+          0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+          0px 1px 2px -1px rgba(0, 0, 0, 0.08),
+          0px 2px 4px 0px rgba(0, 0, 0, 0.06); }
       .slideshow__slide-content-link {
         display: block;
         position: absolute;

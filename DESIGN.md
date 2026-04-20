@@ -103,10 +103,11 @@ These are set in `config/settings_data.json` or `theme.liquid` and should not be
 
 | Tier | Variable | Value | When to use |
 |------|----------|-------|-------------|
-| **Cards / panels / modals / buttons** | `var(--block-border-radius)` / `var(--button-border-radius)` | 16px | Any container or interactive element: product cards, drawers, dropdowns, buttons, gallery items, side panels |
+| **Cards / panels / modals** | `var(--block-border-radius)` | 16px | Any container: product cards, drawers, dropdowns, gallery items, side panels |
+| **Buttons** | `var(--button-border-radius)` | 12px | All button elements |
 | **Inputs** | `var(--input-border-radius)` | 8px | Text inputs, textareas, selects, progress bars, sliders. Intentionally less rounded — inputs are utilitarian, buttons are branded. |
 
-Use `var(--block-border-radius)` or `var(--button-border-radius)` for 16px elements, and `var(--input-border-radius)` for 8px elements — never hardcode the pixel value.
+Use `var(--block-border-radius)` for 16px containers, `var(--button-border-radius)` for 12px buttons, and `var(--input-border-radius)` for 8px inputs — never hardcode the pixel value.
 
 For pill-shaped elements (e.g. marketing CTAs, badge tags): `border-radius: 500px`. Use sparingly.
 
@@ -179,3 +180,4 @@ Three shadow tiers, accessed via CSS custom properties defined in `snippets/head
 | 2026-03-26 | Product cards: no border, no shadow, transparent bg | Clean flat look is intentional — elevation is reserved for overlays |
 | 2026-03-26 | 3-tier shadow system (light/standard/heavy) | Covers subtle persistent UI, standard overlays, and heavy modals — replaces the single-shadow rule |
 | 2026-03-26 | Border radius restricted to 8px and 16px only | Simplifies the system — inputs get 8px, everything else (cards, buttons, panels) gets 16px |
+| 2026-04-20 | Button border radius changed from 16px to 12px | Slightly softer than full 16px cards — buttons feel distinct from container elements |

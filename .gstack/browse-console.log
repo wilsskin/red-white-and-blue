@@ -1,0 +1,2 @@
+[2026-04-20T16:32:13.148Z] [warning] [GroupMarkerNotSet(crbug.com/242999)!:A01028003C010000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader (about:flags#enable-unsafe-swiftshader) flag to opt in to lower security guarantees for trusted content.
+[2026-04-20T16:32:13.150Z] [warning] [.WebGL-0x124011c1c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
