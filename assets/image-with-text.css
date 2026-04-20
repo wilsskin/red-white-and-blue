@@ -47,7 +47,9 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      padding-bottom: 40%; }
+      height: 60vw;
+      max-height: 350px;
+      padding-bottom: 0; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media {
           position: absolute;
@@ -56,19 +58,20 @@
           right: 0;
           bottom: 0;
           padding-bottom: 0;
-          height: 100%; } }
+          height: 100%;
+          max-height: none; } }
       .image-with-text--image-media.aspect-ratio--small {
-        padding-bottom: 40%; }
+        padding-bottom: 0; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media.aspect-ratio--small {
           padding-bottom: 0; } }
       .image-with-text--image-media.aspect-ratio--large {
-        padding-bottom: 40%; }
+        padding-bottom: 0; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media.aspect-ratio--large {
           padding-bottom: 0; } }
   .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
-    min-height: 40vw; }
+    min-height: 60vw; }
     @media only screen and (min-width: 768px) {
       .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
         min-height: 0; } }
@@ -86,7 +89,7 @@
     flex-grow: 1;
     padding: 24px;
     align-items: center;
-    min-height: 40vw;
+    min-height: 60vw;
     background: var(--color-bg, #fff); }
     @media only screen and (min-width: 768px) {
       .image-with-text--content {
