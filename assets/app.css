@@ -2976,7 +2976,7 @@ h6,
 
 .animations-true .line-child {
   overflow: hidden;
-  padding-bottom: 0.2em; }
+  padding-bottom: 0em; }
 
 
 :focus:not(:focus-visible) {

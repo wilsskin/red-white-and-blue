@@ -67,6 +67,11 @@
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media.aspect-ratio--large {
           padding-bottom: 0; } }
+  .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
+    min-height: 100vw; }
+    @media only screen and (min-width: 768px) {
+      .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
+        min-height: 0; } }
       .image-with-text--image-media iframe,
       .image-with-text--image-media video {
         position: absolute;
@@ -81,10 +86,12 @@
     flex-grow: 1;
     padding: 25px;
     align-items: center;
+    min-height: 75vw;
     background: var(--color-bg, #fff); }
     @media only screen and (min-width: 768px) {
       .image-with-text--content {
         padding: 64px 48px;
+        min-height: 0;
         grid-area: content; } }
     @media only screen and (min-width: 1068px) {
       .image-with-text--content {
