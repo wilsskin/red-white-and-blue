@@ -47,7 +47,7 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      padding-bottom: var(--ratio-percent); }
+      padding-bottom: 40%; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media {
           position: absolute;
@@ -58,17 +58,17 @@
           padding-bottom: 0;
           height: 100%; } }
       .image-with-text--image-media.aspect-ratio--small {
-        padding-bottom: 75%; }
+        padding-bottom: 40%; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media.aspect-ratio--small {
           padding-bottom: 0; } }
       .image-with-text--image-media.aspect-ratio--large {
-        padding-bottom: 100%; }
+        padding-bottom: 40%; }
       @media only screen and (min-width: 768px) {
         .image-with-text--image-media.aspect-ratio--large {
           padding-bottom: 0; } }
   .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
-    min-height: 100vw; }
+    min-height: 40vw; }
     @media only screen and (min-width: 768px) {
       .image-with-text:has(.image-with-text--image-media.aspect-ratio--large) .image-with-text--content {
         min-height: 0; } }
@@ -84,9 +84,9 @@
     display: flex;
     width: 100%;
     flex-grow: 1;
-    padding: 25px;
+    padding: 24px;
     align-items: center;
-    min-height: 75vw;
+    min-height: 40vw;
     background: var(--color-bg, #fff); }
     @media only screen and (min-width: 768px) {
       .image-with-text--content {
