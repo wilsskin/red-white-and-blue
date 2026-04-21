@@ -85,7 +85,7 @@
         "text_Ywk6HU": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and diversity are not extras to be tolerated. They’re the whole damn point of America. </strong></p>",
+            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. <br/>The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and diversity are not extras to be tolerated. <br/>They’re the whole damn point of America. </strong></p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
@@ -139,7 +139,7 @@
         "text_QyagRT": {
           "type": "text",
           "settings": {
-            "text": "<p>For too long, the other side has claimed the flag, patriotism, and freedom as their own. <br/>We’re taking them back — one shirt at a time.</p>"
+            "text": "<p><strong>For too long, the other side has claimed the flag, patriotism, and freedom as their own. <br/></strong><em><strong>We’re taking them back — one shirt at a time.</strong></em></p>"
           }
         },
         "button_m8AKt7": {
