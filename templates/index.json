@@ -107,16 +107,10 @@
     "image_with_text_jDGhXT": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_FhKk4m": {
-          "type": "subheading",
-          "settings": {
-            "text": "OUR MISSION"
-          }
-        },
         "heading_kjB4GF": {
           "type": "heading",
           "settings": {
-            "text": "FREEDOM. EQUALITY. .JUSTICE FOR ALL.",
+            "text": "GET YOUR FREEDOM ON!",
             "marker_style": "style1",
             "heading_size": "h2",
             "marker_color": "#ffffff"
@@ -125,12 +119,11 @@
         "text_Te6QjH": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Bold American apparel for those who know freedom chooses tomorrow over yesterday. </strong></p><p></p><p></p>"
+            "text": "<p>Bold American apparel for those who wear their freedom on their sleeve.</p><p></p><p></p>"
           }
         }
       },
       "block_order": [
-        "subheading_FhKk4m",
         "heading_kjB4GF",
         "text_Te6QjH"
       ],
