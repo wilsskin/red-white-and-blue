@@ -322,9 +322,9 @@
     "166366563622039b3e": {
       "type": "featured-collection",
       "settings": {
-        "heading": "Fresh For the Fight:",
+        "heading": "FRESH FOR THE FIGHT",
         "marker_style": "style1",
-        "description": "",
+        "description": "<p>LATEST DROPS</p>",
         "collection": "new-arrivals",
         "display_type": "grid",
         "product_limit": 4,
