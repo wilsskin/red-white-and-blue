@@ -349,10 +349,10 @@
         "heading_wfHwGE": {
           "type": "heading",
           "settings": {
-            "text": "THE ORIGINAL FREEDOM BRAND",
+            "text": "|THE ORIGINAL FREEDOM BRAND|",
             "marker_style": "style1",
             "heading_size": "h3",
-            "marker_color": "#fd6262"
+            "marker_color": "#1d58ba"
           }
         },
         "text_gCmnV7": {
