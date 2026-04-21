@@ -122,6 +122,7 @@
       "blocks": {
         "subheading_9iz3dV": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Our Mission"
           }
