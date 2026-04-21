@@ -64,7 +64,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-sellers-1",
-            "tab_button_label": "Shop All",
+            "tab_button_label": "",
             "tab_button_link": "",
             "enable_promotion": false,
             "title": "Shop All",
@@ -322,7 +322,7 @@
     "166366563622039b3e": {
       "type": "featured-collection",
       "settings": {
-        "heading": "New Arrivals",
+        "heading": "Fresh For the Fight:",
         "marker_style": "style1",
         "description": "",
         "collection": "new-arrivals",
