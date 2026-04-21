@@ -76,7 +76,7 @@
         "heading_dL7ALP": {
           "type": "heading",
           "settings": {
-            "text": "We’re all about freedom — the real kind",
+            "text": "THIS IS WHAT FREEDOM LOOKS LIKE",
             "marker_style": "style1",
             "size": "h3",
             "marker_color": "#fd6262"
@@ -85,7 +85,7 @@
         "text_Ywk6HU": {
           "type": "text",
           "settings": {
-            "text": "<p>The freedom to live your life, think your thoughts, and make your own choices. In this country, diversity and freedom aren’t just okay; they’re the whole point.</p>",
+            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and diversity are not extras to be tolerated. They’re the whole point of America.</strong></p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
