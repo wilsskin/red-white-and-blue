@@ -590,7 +590,7 @@
           "type": "promotion",
           "settings": {
             "image": "shopify://shop_images/women-voters.png",
-            "title": "Leauge of Women Voters",
+            "title": "League of Women Voters",
             "block_link": "https://lwv.org"
           }
         },
