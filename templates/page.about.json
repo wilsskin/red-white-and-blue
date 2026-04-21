@@ -78,7 +78,7 @@
           "settings": {
             "text": "THIS IS WHAT FREEDOM LOOKS LIKE",
             "marker_style": "style1",
-            "size": "h3",
+            "size": "h2",
             "marker_color": "#fd6262"
           }
         },
