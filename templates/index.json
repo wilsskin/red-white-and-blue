@@ -325,7 +325,7 @@
         "heading": "New Arrivals",
         "marker_style": "style1",
         "description": "",
-        "collection": "men",
+        "collection": "new-arrivals",
         "display_type": "grid",
         "product_limit": 4,
         "columns_desktop": 4,
