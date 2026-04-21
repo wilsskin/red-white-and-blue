@@ -155,7 +155,7 @@
             "icon": "ruler",
             "image": "shopify://shop_images/icon-location.svg",
             "heading": "Printed in the USA",
-            "text": "<p>Designed, Printed, Packaged, and Shipped in America just for you.</p>"
+            "text": "<p>Designed, printed, packed, and shipped in America just for you. </p>"
           }
         },
         "1662098307788ca717-2": {
@@ -164,7 +164,7 @@
             "icon": "ruler",
             "image": "shopify://shop_images/icon-shirt.svg",
             "heading": "Fresh Drops",
-            "text": "<p>Fresh designs that keep pace with the movement.</p>"
+            "text": "<p>New designs released regularly for the moment you’re in.</p>"
           }
         },
         "2c4a636c-cb89-4faf-82e6-13a0e7241006": {
@@ -173,7 +173,7 @@
             "icon": "ruler",
             "image": "shopify://shop_images/icon-tag.svg",
             "heading": "Premium Blanks",
-            "text": "<p>Comfort Colors, Bella + Canvas, and other premium blanks.</p>"
+            "text": "<p>Printed on Comfort Colors, Bella + Canvas, and other premium favorites.</p>"
           }
         }
       },
