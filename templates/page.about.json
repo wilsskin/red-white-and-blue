@@ -85,7 +85,7 @@
         "text_Ywk6HU": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. <br/>The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and diversity are not extras to be tolerated. <br/>They’re the whole damn point of America. </strong></p>",
+            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. <br/>The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and diversity are not extras to be tolerated. <br/></strong><em><strong>They’re the whole damn point of America. </strong></em></p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
