@@ -358,7 +358,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "/",
             "button_color": "accent"
           }
         }
