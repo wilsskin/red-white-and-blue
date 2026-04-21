@@ -22,7 +22,7 @@
         "text_BHwiDf": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Classic American Apparel.</strong><br/><strong>Modern American Values.</strong></p>",
+            "text": "<p>Patriotic apparel for people who believe freedom, equality, and progress are the real American values.</p>",
             "description_size": "medium"
           }
         },
@@ -358,7 +358,7 @@
         "text_gCmnV7": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Bold American apparel for people who believe freedom, equality, and progress are the real American values. Because the future of this country belongs to those brave enough to keep moving it forward.<br/></strong><em><strong>So grab a freedom jersey, get in the game, and GET YOUR FREEDOM ON!</strong></em></p>"
+            "text": "<p><strong>Bold American apparel for people who believe freedom, equality, and progress are the real American values. Because the future of this country belongs to those brave enough to keep moving it forward.<br/></strong><em><strong>So gear up, get in the game, and GET YOUR FREEDOM ON!</strong></em></p>"
           }
         },
         "button_bGJtQt": {
