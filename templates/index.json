@@ -86,7 +86,7 @@
       "settings": {
         "heading": "TRUE BLUE FAVORITES",
         "marker_style": "style1",
-        "description": "<p>OUR BEST SELLERS</p>",
+        "description": "<p>Best Sellers</p>",
         "product_limit": 8,
         "columns_desktop": 5,
         "show_progress_bar": false,
