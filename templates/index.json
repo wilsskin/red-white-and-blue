@@ -358,7 +358,7 @@
         "text_gCmnV7": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Patriotism got weird. We’re fixing it.<br/></strong><br/>Classic American apparel for liberals who refuse to give up on America. <em><strong>Let's do this!</strong></em></p>"
+            "text": "<p><br/>Classic American apparel for liberals who refuse to give up on America.<strong><br/><br/></strong><em><strong>Patriotism got weird. We’re fixing it.</strong></em></p>"
           }
         },
         "button_bGJtQt": {
@@ -423,7 +423,7 @@
             "product_handle": "",
             "stars": "",
             "heading": "",
-            "text": "\"The RESIST tote is my quiet way to stand up for what matters. I carry it everywhere I go!\"",
+            "text": "\"The RESIST tote is my way to encourage others. I carry it everywhere!\"",
             "author": "Julianna (Nogales,AZ)"
           }
         },
