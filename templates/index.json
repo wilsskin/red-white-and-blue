@@ -22,7 +22,7 @@
         "text_BHwiDf": {
           "type": "text",
           "settings": {
-            "text": "<p><em><strong>PATRIOTISM GOT WEIRD.  WE'RE FIXING IT. </strong></em></p>",
+            "text": "<p><em><strong>PATRIOTISM GOT WEIRD.<br/>WE'RE TAKING IT BACK. </strong></em></p>",
             "description_size": "medium"
           }
         },
@@ -119,7 +119,7 @@
         "text_kbf7qy": {
           "type": "text",
           "settings": {
-            "text": "<p><em><strong><br/>Patriotism never looked so good.</strong></em></p>"
+            "text": "<p><em><strong><br/>Freedom never looked so good.</strong></em></p>"
           }
         }
       },
