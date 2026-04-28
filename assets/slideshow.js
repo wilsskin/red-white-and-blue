@@ -66,7 +66,7 @@ if (!customElements.get('slide-show')) {
         args.wrapAround = false;
         args.adaptiveHeight = false;
         args.resize = true;
-        args.draggable = false;
+        args.draggable = window.matchMedia('(max-width: 767px)').matches;
         args.on.ready = function () {
           let flkty = this;
           flkty.resize();
