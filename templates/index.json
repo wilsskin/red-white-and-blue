@@ -149,13 +149,13 @@
     "16620983071df6eb29": {
       "type": "text-with-icons",
       "blocks": {
-        "1662098307788ca717-0": {
+        "2c4a636c-cb89-4faf-82e6-13a0e7241006": {
           "type": "icon",
           "settings": {
             "icon": "ruler",
-            "image": "shopify://shop_images/icon-location.svg",
-            "heading": "Printed in the USA",
-            "text": "<p>Designed, printed, packed, and shipped in America. </p>"
+            "image": "shopify://shop_images/icon-tag.svg",
+            "heading": "Premium Blanks",
+            "text": "<p>Comfort Colors, Bella+Canvas, and other premium favorites.</p>"
           }
         },
         "1662098307788ca717-2": {
@@ -167,20 +167,20 @@
             "text": "<p>New designs for the moment we're in.</p>"
           }
         },
-        "2c4a636c-cb89-4faf-82e6-13a0e7241006": {
+        "1662098307788ca717-0": {
           "type": "icon",
           "settings": {
             "icon": "ruler",
-            "image": "shopify://shop_images/icon-tag.svg",
-            "heading": "Premium Blanks",
-            "text": "<p>Comfort Colors, Bella+Canvas, and other premium favorites.</p>"
+            "image": "shopify://shop_images/icon-location.svg",
+            "heading": "Printed in the USA",
+            "text": "<p>Designed, printed, packed, and shipped in America. </p>"
           }
         }
       },
       "block_order": [
-        "1662098307788ca717-0",
+        "2c4a636c-cb89-4faf-82e6-13a0e7241006",
         "1662098307788ca717-2",
-        "2c4a636c-cb89-4faf-82e6-13a0e7241006"
+        "1662098307788ca717-0"
       ],
       "settings": {
         "text_alignment": "center",
