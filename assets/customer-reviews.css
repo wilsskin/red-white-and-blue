@@ -84,6 +84,9 @@
     .customer-reviews--carousel .columns {
       padding-bottom: 16px; }
       @media only screen and (max-width: 767px) {
+        .customer-reviews--carousel {
+          margin: 0;
+          width: 100%; }
         .customer-reviews--carousel .columns {
           max-width: 320px; } }
     @media only screen and (min-width: 768px) {

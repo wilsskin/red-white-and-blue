@@ -1,4 +1,7 @@
 
+html {
+  background: var(--color-footer-bg, var(--color-accent));
+}
 
 .footer .thb-widget-menu .sub-menu {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
