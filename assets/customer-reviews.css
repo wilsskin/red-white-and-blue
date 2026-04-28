@@ -80,13 +80,12 @@
     flex-wrap: nowrap;
     overflow: hidden;
     margin: 0 -15px;
-    width: calc(100% + 30px);
-    padding: 0 24px; }
+    width: calc(100% + 30px); }
     .customer-reviews--carousel .columns {
       padding-bottom: 16px; }
       @media only screen and (max-width: 767px) {
         .customer-reviews--carousel .columns {
-          max-width: var(--mobile-swipe-width); } }
+          max-width: 320px; } }
     @media only screen and (min-width: 768px) {
       .customer-reviews--carousel {
         margin: 0 -10px;
@@ -104,6 +103,8 @@
     .customer-reviews--carousel .carousel__slide {
       cursor: default !important; }
     @media only screen and (max-width: 767px) {
+      .customer-reviews--carousel.flickity-enabled {
+        overflow: visible; }
       .customer-reviews--carousel .flickity-viewport {
         overflow: visible; } }
     .customer-reviews--carousel .flickity-nav.flickity-prev {

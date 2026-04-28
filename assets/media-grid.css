@@ -42,7 +42,10 @@
       padding-bottom: 10px; }
       .media-grid--inner.swipe-on-mobile .media-grid--item {
         scroll-snap-align: center;
-        grid-area: auto; } }
+        grid-area: auto; }
+    .media-grid--item h4.media-grid--heading-no-margin {
+      font-size: 2.5rem;
+      line-height: 1.45; } }
 
 .media-grid--item {
   background: var(--color-bg-gradient, var(--color-bg, #fff));
