@@ -12,9 +12,41 @@
     "main": {
       "type": "main-page",
       "settings": {}
+    },
+    "collection_list_YH4W84": {
+      "type": "collection-list",
+      "name": "Collection list",
+      "settings": {
+        "heading": "Shop by Category",
+        "marker_style": "style1",
+        "description": "<p>Add a short description for your collections</p>",
+        "heading_size": "small",
+        "collection_list": [
+          "men",
+          "long-sleeve",
+          "hats",
+          "hoodies-and-sweatshirts"
+        ],
+        "image_ratio": "portrait",
+        "collection_layout": "grid",
+        "style": "style1",
+        "text_alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "heading_position": "bottom-center",
+        "marker_color": "#FD6262",
+        "text_color": "#2C2D2E",
+        "overlay_color": "transparent",
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_list_YH4W84"
   ]
 }
