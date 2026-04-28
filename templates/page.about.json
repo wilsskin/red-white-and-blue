@@ -85,7 +85,7 @@
         "text_Ywk6HU": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>At Red White And Blue, we’re all about freedom — the real kind. <br/>The freedom to live your life, speak your mind, and make your own choices.<br/>Freedom, equality, and justice are not entitlements for the few. They are for </strong><em><strong>ALL OF US. </strong></em><strong><br/></strong><em><strong>That's actually the whole damn point of America. </strong></em></p>",
+            "text": "<p>At Red White And Blue, we’re about freedom — the real kind.<br/>The freedom to live your life, speak your mind, and make your own choices. Freedom, equality, and justice aren’t for the few. <br/>They’re for <strong>ALL OF US.</strong></p><p><em><strong>That’s the whole damn point of America.</strong></em></p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
@@ -139,7 +139,7 @@
         "text_QyagRT": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>For too long, the other side has claimed the flag, patriotism, and freedom as their own. <br/></strong><em><strong>We’re taking it all back — one shirt at a time.</strong></em></p>"
+            "text": "<p>For too long, the flag, patriotism, and freedom have been hijacked.<br/><em><strong>We’re taking it all back — one shirt at a time.</strong></em></p>"
           }
         },
         "button_m8AKt7": {
@@ -190,7 +190,7 @@
         "text_m9fhXT": {
           "type": "text",
           "settings": {
-            "text": "<p>From civil rights to women’s rights, from reproductive rights to marriage rights, immigrant rights, voting rights, and beyond– we have always been the ones fighting for freedom, defending it, and expanding its meaning. <em><strong>Liberals created the damn freedom brand in the first place.<br/></strong></em><strong>So wear it like you own it, because you do!</strong></p><p></p>",
+            "text": "<p><strong>Freedom. Equality. Progress. That’s the true Red, White & Blue.</strong></p><p>From civil rights to women’s rights, from reproductive freedom to voting rights —<br/>liberals have always been the ones fighting for it, defending it, and pushing it forward.<br/>We built the freedom brand in the first place.</p><p><em><strong>So wear it like you own it. Because you do!</strong></em></p>",
             "custom_liquid": "",
             "size": "text-size-regular"
           }
