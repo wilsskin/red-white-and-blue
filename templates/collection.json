@@ -140,6 +140,7 @@
         "template--17918041260314__9e57bc14-72e8-48b3-81d3-9b209e520fd0-1678353048d7c75c7a-0",
         "template--17918041260314__9e57bc14-72e8-48b3-81d3-9b209e520fd0-1678353048d7c75c7a-1"
       ],
+      "disabled": true,
       "settings": {
         "desktop_height": 300,
         "mobile_height": 250,
@@ -174,6 +175,7 @@
         "template--17918041260314__a923b0af-87bd-4fac-ac50-7c5ad000c0d0-16783546709e4eefff-1",
         "template--17918041260314__a923b0af-87bd-4fac-ac50-7c5ad000c0d0-16783546709e4eefff-2"
       ],
+      "disabled": true,
       "settings": {
         "text_width": "large",
         "text_position": "center",
