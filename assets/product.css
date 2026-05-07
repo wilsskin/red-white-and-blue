@@ -1154,9 +1154,10 @@
     font-size: 0.9375rem;
     line-height: 1;
     font-weight: var(--font-body-medium-weight, 500);
-    padding: 24px 40px 24px 0;
+    padding: 0px 40px 24px 0;
     color: var(--color-heading, #1a1c1d);
-    cursor: pointer; }
+    cursor: pointer; 
+    align-items: top; }
     .accordion summary span {
       display: inline-flex;
       align-items: center;
