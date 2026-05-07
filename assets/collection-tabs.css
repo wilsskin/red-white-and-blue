@@ -46,6 +46,33 @@
       .collection-tabs__list {
         width: 100%; } }
 
+/* Description subtext link: blue with caret arrow, darker on hover */
+.section-collection-tabs .section-header--description a {
+  color: #1D58BA;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: var(--font-body-medium-weight, 500);
+  transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+  .section-collection-tabs .section-header--description a::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 6px;
+    background-color: #1D58BA;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L1 9' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+  .section-collection-tabs .section-header--description a:hover {
+    color: #174695; }
+  .section-collection-tabs .section-header--description a:hover::after {
+    background-color: #174695; }
+
 .section-collection-tabs .products.carousel .columns {
   display: none; }
   .section-collection-tabs .products.carousel .columns.carousel__slide {

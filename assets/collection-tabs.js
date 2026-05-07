@@ -15,10 +15,6 @@ if (!customElements.get('collection-tabs')) {
         this.links = Array.from(this.querySelectorAll('.collection-tabs__list-link'));
         this.links.forEach((link) => {
           link.addEventListener('click', (event) => {
-            const href = link.getAttribute('href');
-            if (href && href !== '#') {
-              return;
-            }
             event.preventDefault();
             let handle = link.dataset.collection;
             [].forEach.call(this.links, function(el) {
