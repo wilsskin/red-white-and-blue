@@ -1163,6 +1163,7 @@
       align-items: center;
       transform-origin: center;
       margin-left: 16px;
+      margin-top: -10px;
       position: absolute;
       top: 0;
       right: 0;
