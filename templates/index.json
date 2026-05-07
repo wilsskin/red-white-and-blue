@@ -64,6 +64,7 @@
           "type": "collection",
           "settings": {
             "collection": "best-sellers-1",
+            "hide_tab": true,
             "tab_button_label": "",
             "tab_button_link": "",
             "enable_promotion": false,
