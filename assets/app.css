@@ -3829,6 +3829,13 @@ select {
   grid-template-columns: auto 1fr;
   gap: 10px; }
 
+.cart-drawer-buttons a.button {
+  padding: 8px 16px; }
+
+.cart-drawer-buttons .checkout-button {
+  padding: 8px 16px;
+  white-space: nowrap; }
+
 .cart-drawer .text-button {
   margin-top: 15px;
   margin-right: 0;
