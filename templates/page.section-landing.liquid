@@ -1,4 +1,16 @@
 {% assign section_landing = page.metafields.custom.section_landing.value %}
+{{- 'breadcrumbs.css' | asset_url | stylesheet_tag -}}
+<div class="row">
+  <div class="small-12 columns">
+    <scroll-shadow>
+      <nav class="breadcrumbs" aria-label="breadcrumbs">
+        <a href="{{ routes.root_url }}" title="{{ 'sections.breadcrumbs.home' | t | escape }}">{{ 'sections.breadcrumbs.home' | t }}</a>
+        <i>/</i>
+        {{ page.title }}
+      </nav>
+    </scroll-shadow>
+  </div>
+</div>
 {{- 'list-collections.css' | asset_url | stylesheet_tag -}}
 
 <div class="row">
