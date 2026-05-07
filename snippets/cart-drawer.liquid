@@ -222,7 +222,7 @@
 					{% endif %}
 					<div class="cart-drawer-buttons">
 						{%- if settings.cart_drawer_cart_button -%}
-						<a href="{{ routes.cart_url }}" class="button" title="{{ 'general.cart_drawer.view_cart' | t | escape }}"><span>{{ 'general.cart_drawer.view_cart' | t }}</span></a>
+						<a href="{{ routes.cart_url }}" class="button outline" title="{{ 'general.cart_drawer.view_cart' | t | escape }}"><span>{{ 'general.cart_drawer.view_cart' | t }}</span></a>
 						{%- endif -%}
 						{%- if settings.cart_drawer_checkout_button -%}
 						<form action="{{ routes.cart_url }}" method="post" novalidate>

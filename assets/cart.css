@@ -141,6 +141,10 @@
       text-decoration: underline;
       text-underline-offset: 2px; }
 
+.checkout-button {
+  padding-left: 12px;
+  padding-right: 12px; }
+
 
 
 
