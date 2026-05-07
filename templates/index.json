@@ -324,7 +324,7 @@
       "settings": {
         "heading": "FRESH FOR THE FIGHT",
         "marker_style": "style1",
-        "description": "<p>LATEST DROPS</p>",
+        "description": "<p><a href=\"/collections/new-arrivals\" title=\"New Arrivals\">Latest Drops</a></p>",
         "collection": "new-arrivals",
         "display_type": "grid",
         "product_limit": 4,
