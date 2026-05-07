@@ -44,7 +44,7 @@
 						assign tab_href = '#'
 					endif
 				-%}
-				<a href="{{ tab_href }}" data-collection="{{ tab_handle }}" class="collection-tabs__list-link text-button text-button--has-icon{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>{{ tab_label }} <span>{% render 'svg-icons' with 'thb-caret-right' %}</span></a>
+				{%- unless block.settings.hide_tab -%}<a href="{{ tab_href }}" data-collection="{{ tab_handle }}" class="collection-tabs__list-link text-button text-button--has-icon{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>{{ tab_label }} <span>{% render 'svg-icons' with 'thb-caret-right' %}</span></a>{%- endunless -%}
 			{%- endfor -%}
 		</collection-tabs>
 	</scroll-shadow>
