@@ -143,7 +143,13 @@
 
 .checkout-button {
   padding-left: 12px;
-  padding-right: 12px; }
+  padding-right: 12px;
+  white-space: nowrap; }
+
+@media only screen and (max-width: 480px) {
+  .cart-drawer-buttons a.button {
+    padding-left: 12px;
+    padding-right: 12px; } }
 
 
 
