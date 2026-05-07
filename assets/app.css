@@ -1686,6 +1686,11 @@ table {
       margin: 0;
       line-height: 1;
       color: var(--color-body, #2c2d2e); }
+    .side-panel-header .cart-drawer__count {
+      font-family: var(--font-body-family);
+      font-weight: 400;
+      font-size: 0.9375rem;
+      color: var(--color-body, #2c2d2e); }
       .side-panel-header .h6 > span {
         display: block; }
       .side-panel-header .h6 .facets__label {
@@ -3830,10 +3835,10 @@ select {
   gap: 10px; }
 
 .cart-drawer-buttons a.button {
-  padding: 8px 16px; }
+  padding: 8px 24px; }
 
 .cart-drawer-buttons .checkout-button {
-  padding: 8px 16px;
+  padding: 8px 24px;
   white-space: nowrap; }
 
 .cart-drawer .text-button {
