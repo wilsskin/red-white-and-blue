@@ -86,7 +86,7 @@
       "settings": {
         "heading": "FREEDOM FIGHTER FAVORITES",
         "marker_style": "style1",
-        "description": "<p>Best Sellers</p>",
+        "description": "<p><a href=\"/collections/best-sellers-1\" title=\"Best Sellers\">Best Sellers</a></p>",
         "product_limit": 8,
         "columns_desktop": 5,
         "show_progress_bar": false,
