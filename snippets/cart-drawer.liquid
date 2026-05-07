@@ -9,7 +9,7 @@
 	<div class="side-panel-inner">
 		<div class="side-panel-header">
 			<div>
-				<span class="h6">{{ 'general.cart_drawer.title' | t }}</span><span class="cart-drawer__count"> ({{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }})</span>
+				<span class="cart-drawer__title"><span class="h6">{{ 'general.cart_drawer.title' | t }}</span><span class="cart-drawer__count"> ({{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }})</span></span>
 				<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
 			</div>
 		</div>
