@@ -133,6 +133,12 @@
     pointer-events: none;
     background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
 
+@media only screen and (max-width: 480px) {
+  .media-grid--item[class*="content-"] {
+    justify-content: center; }
+  .media-grid--content {
+    text-align: center; } }
+
 .media-grid--content {
   z-index: 2; }
   .media-grid--content > *:last-child {
