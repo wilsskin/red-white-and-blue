@@ -463,7 +463,7 @@
           "type": "button",
           "settings": {
             "button_text": "About Us",
-            "button_link": "shopify://pages/about-us"
+            "button_link": "shopify://pages/about"
           }
         }
       },
