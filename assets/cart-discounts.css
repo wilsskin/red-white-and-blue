@@ -4,6 +4,8 @@
 
 .cart-discounts {
   display: block; }
+  .cart-discounts .cart-discounts--title {
+    padding-top: 16px; }
   .cart-discounts--inner {
     display: flex;
     gap: 5px; }
