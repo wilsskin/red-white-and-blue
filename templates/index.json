@@ -122,11 +122,19 @@
           "settings": {
             "text": "<p>Liberals built the damn freedom brand. <br/>Now it's time to take it back.<br/></p><p>The flag. The story. The spirit. All of it. </p>"
           }
+        },
+        "button_WP8ytM": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
         "heading_kjB4GF",
-        "text_kbf7qy"
+        "text_kbf7qy",
+        "button_WP8ytM"
       ],
       "name": "Image with text",
       "settings": {
