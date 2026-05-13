@@ -93,11 +93,11 @@
 						<custom-select class="custom-select" data-auto-close="true">
 							{%- liquid
 								assign allowed_sort_values = 'best-selling,manual,created-descending,price-ascending,price-descending' | split: ','
-								assign sort_by = results.sort_by | default: 'best-selling'
+								assign sort_by = results.sort_by | default: 'manual'
 								unless allowed_sort_values contains sort_by
-									assign sort_by = 'best-selling'
+									assign sort_by = 'manual'
 								endunless
-								assign sort_by_name = 'Best sellers'
+								assign sort_by_name = 'Featured'
 								for option in results.sort_options
 									if option.value == sort_by
 										assign sort_by_name = option.name

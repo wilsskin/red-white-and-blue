@@ -216,9 +216,9 @@
 							<label for="SortByMobile" class="visually-hidden">{{ 'products.facets.sort_by_label' | t }}</label>
 							<div class="select">
 								{%- assign allowed_sort_values = 'best-selling,manual,created-descending,price-ascending,price-descending' | split: ',' -%}
-								{%- assign sort_by = results.sort_by | default: 'best-selling' -%}
+								{%- assign sort_by = results.sort_by | default: 'manual' -%}
 								{%- unless allowed_sort_values contains sort_by -%}
-									{%- assign sort_by = 'best-selling' -%}
+									{%- assign sort_by = 'manual' -%}
 								{%- endunless -%}
 								<select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortByMobile" aria-describedby="a11y-refresh-page-message">
 									{%- for sort_value in allowed_sort_values -%}
