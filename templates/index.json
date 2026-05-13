@@ -211,7 +211,7 @@
           "type": "media",
           "settings": {
             "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-22.jpg",
-            "slide_link": "shopify://collections/shirts",
+            "slide_link": "shopify://collections/women",
             "use_video": false,
             "video_autoplay": true,
             "column": 2,
