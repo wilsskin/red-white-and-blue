@@ -226,7 +226,7 @@
             "align_text": "left",
             "overlay_color": "#ed3537",
             "overlay_opacity": 20,
-            "text": "<p>Freedom is more than a slogan.<br/><br/>It’s the right to live your life, speak your mind, and choose your own future.</p>"
+            "text": "<p><strong>Freedom is more than a slogan.</strong><br/><br/>It’s the right to live your life, speak your mind, and choose your own future.</p>"
           }
         },
         "box_rLEpyP": {
@@ -239,7 +239,7 @@
             "align_text": "left",
             "overlay_color": "#fafafa",
             "overlay_opacity": 20,
-            "text": "<p>Equality is not optional.</p><p>Not tolerance. Not charity. <br/>Equal rights, equal dignity, equal opportunity.</p>"
+            "text": "<p><strong>Equality is not optional.</strong></p><p>Not tolerance. Not charity. <br/>Equal rights, equal dignity, equal opportunity.</p>"
           }
         },
         "box_BfqRWb": {
@@ -252,7 +252,7 @@
             "align_text": "left",
             "overlay_color": "#1d58ba",
             "overlay_opacity": 20,
-            "text": "<p>Progress is patriotism in action.<br/><br/>It’s how freedom grows, rights expand, and America moves forward.</p>"
+            "text": "<p><strong>Progress is patriotism in action.</strong><br/><br/>It’s how freedom grows, rights expand, and America moves forward.</p>"
           }
         }
       },
