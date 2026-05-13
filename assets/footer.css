@@ -208,6 +208,11 @@ html {
       color: var(--color-footer-text, #fff); }
   .footer .signup-container .field label {
     color: var(--color-footer-text, #fff); }
+  .footer .signup-container input:-webkit-autofill,
+  .footer .signup-container input:-webkit-autofill:hover,
+  .footer .signup-container input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px var(--color-footer-bg, var(--color-accent)) inset !important;
+    -webkit-text-fill-color: var(--color-footer-text, #fff) !important; }
 
 .sub-footer {
   margin-top: 48px;
