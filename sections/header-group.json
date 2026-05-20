@@ -55,7 +55,6 @@
         "text-2",
         "text-3"
       ],
-      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
