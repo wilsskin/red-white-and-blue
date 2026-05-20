@@ -158,7 +158,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/story-second.png",
+        "image": "shopify://shop_images/home-img2.webp",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
