@@ -49,7 +49,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Feb_10_2026_12_18_54_PM.png",
+        "image": "shopify://shop_images/about-hero.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-400",
@@ -219,7 +219,7 @@
         "box_gLniki": {
           "type": "box",
           "settings": {
-            "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-3.webp",
+            "image": "shopify://shop_images/freedom-img.webp",
             "image_link": "",
             "open": false,
             "heading": "FREEDOM",
@@ -232,7 +232,7 @@
         "box_rLEpyP": {
           "type": "box",
           "settings": {
-            "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-18.jpg",
+            "image": "shopify://shop_images/equality-img.webp",
             "image_link": "",
             "open": false,
             "heading": "EQUALITY",
@@ -245,7 +245,7 @@
         "box_BfqRWb": {
           "type": "box",
           "settings": {
-            "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-12.jpg",
+            "image": "shopify://shop_images/progress-img.webp",
             "image_link": "",
             "open": false,
             "heading": "PROGRESS",
@@ -371,7 +371,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-25.jpg",
+        "image": "shopify://shop_images/about-img1.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
