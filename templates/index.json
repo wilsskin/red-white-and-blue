@@ -42,7 +42,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/hero-img.png",
+        "image": "shopify://shop_images/hero-img.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-400",
@@ -138,7 +138,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/story-img-800-600.png",
+        "image": "shopify://shop_images/home-img1.webp",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -210,7 +210,7 @@
         "template--17918041129242__f896bcf0-40bd-4c23-8c79-b4d0863d7715-167639056582313b87-0": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-22.jpg",
+            "image": "shopify://shop_images/category-img1.webp",
             "slide_link": "shopify://pages/women",
             "use_video": false,
             "video_autoplay": true,
@@ -234,7 +234,7 @@
         "template--17918041129242__f896bcf0-40bd-4c23-8c79-b4d0863d7715-167639056582313b87-1": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/distressed-dad-hat-charcoal-grey-front-68e6ec3c98212.jpg",
+            "image": "shopify://shop_images/category-img2.webp",
             "slide_link": "shopify://collections/hats",
             "use_video": false,
             "video_autoplay": true,
@@ -258,7 +258,7 @@
         "template--17918041129242__f896bcf0-40bd-4c23-8c79-b4d0863d7715-167639056582313b87-2": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/unisex-garment-dyed-heavyweight-long-sleeve-shirt-navy-front-68ec148f87509.jpg",
+            "image": "shopify://shop_images/category-img3.webp",
             "slide_link": "shopify://collections/long-sleeve",
             "use_video": false,
             "video_autoplay": true,
@@ -282,7 +282,7 @@
         "3963f5c5-4bf4-4cd9-b70a-a4a9e5283569": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/RWB_9-21-25_Final_Picks-32_639f7615-be7d-4ffe-8eea-9a1470ade367.jpg",
+            "image": "shopify://shop_images/category-img4.webp",
             "slide_link": "shopify://collections/tote-bags",
             "use_video": false,
             "video_autoplay": false,
@@ -475,7 +475,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/story-second.png",
+        "image": "shopify://shop_images/home-img2.webp",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
