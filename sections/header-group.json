@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "Free shipping on orders over $70",
+            "text": "Free shipping on orders over $75",
             "hover_text": "Shop Now",
             "link": "shopify://collections/all",
             "color_bg": "#1d58ba",
