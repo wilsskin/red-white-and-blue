@@ -36,7 +36,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/story-img-800-600.png",
+        "image": "{{ collection.metafields.custom.banner_image.value }}",
         "image_parallax": false,
         "desktop_height": "desktop-height-350",
         "mobile_height": "mobile-height-auto",
