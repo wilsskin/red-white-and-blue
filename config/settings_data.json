@@ -59,7 +59,7 @@
     "free_shipping_minimum": "75",
     "search_product_collection": "all",
     "search_product_collection_limit": 3,
-    "custom_html_head": "",
+    "custom_html_head": "<style>\n/* Color swatch border styling */\n.swatch,\n.color-swatch,\n.product-swatch,\n[data-swatch],\n.variant-swatch,\n.swatch-option,\n.swatch-input + label,\n.swatch-label {\n  border: 1px solid #cccccc !important;\n}\n\n/* Ensure border is visible on all swatch states */\n.swatch:hover,\n.color-swatch:hover,\n.product-swatch:hover,\n[data-swatch]:hover,\n.variant-swatch:hover,\n.swatch-option:hover,\n.swatch-input:checked + label,\n.swatch-label:hover {\n  border: 1px solid #cccccc !important;\n}\n\n/* Target swatch circles specifically */\n.swatch-circle,\n.color-circle,\n.swatch-item,\n.variant-option-swatch {\n  border: 1px solid #cccccc !important;\n}\n</style>",
     "favicon": "shopify://shop_images/favicon-rwb.png",
     "search_product_list": [],
     "content_for_index": []
