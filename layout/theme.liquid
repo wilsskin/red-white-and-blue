@@ -138,8 +138,8 @@
 		<script type="module" src="{{ 'instant-page.js' | asset_url }}" defer="defer"></script>
 		{%- endunless -%}
 	{%- endif -%}
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
+<<script>
+  function applyWhiteSwatchBorder() {
     document.querySelectorAll('.product-card-swatch').forEach(function(swatch) {
       const style = swatch.getAttribute('style') || '';
       const match = style.match(/--option-color:\s*([^;]+)/);
@@ -151,6 +151,11 @@
         }
       }
     });
-  });
+  }
+
+  document.addEventListener('DOMContentLoaded', applyWhiteSwatchBorder);
+
+  const observer = new MutationObserver(applyWhiteSwatchBorder);
+  observer.observe(document.body, { childList: true, subtree: true });
 </script></body>
 </html>
