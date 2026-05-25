@@ -29,7 +29,7 @@
         "button_ykHC4T": {
           "type": "button",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "Shop All",
             "button_link": "shopify://collections/all",
             "button_color": "accent"
           }
