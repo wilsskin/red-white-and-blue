@@ -30,7 +30,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop All",
-            "button_link": "/collections",
+            "button_link": "/pages/shop-all",
             "button_color": "accent"
           }
         }
