@@ -59,7 +59,7 @@
     "free_shipping_minimum": "75",
     "search_product_collection": "all",
     "search_product_collection_limit": 3,
-    "custom_html_head": "",
+    "custom_html_head": "<style>\n/* Color swatch border styling - permanent 1px solid black border */\n.swatch,\n.color-swatch,\n.product-swatch,\n[data-swatch],\n.variant-swatch,\n.swatch-option,\n.swatch-button,\n.swatch__button,\n.color-swatch__button,\n.swatch-item,\n.variant-option-swatch,\n.swatch-circle,\n.color-circle {\n  border: 1px solid #000000 !important;\n  box-sizing: border-box;\n}\n\n/* Ensure border persists on focus and active states */\n.swatch:focus,\n.color-swatch:focus,\n.product-swatch:focus,\n[data-swatch]:focus,\n.variant-swatch:focus,\n.swatch-option:focus,\n.swatch-button:focus,\n.swatch__button:focus,\n.color-swatch__button:focus {\n  border: 1px solid #000000 !important;\n}\n\n.swatch:active,\n.color-swatch:active,\n.product-swatch:active,\n[data-swatch]:active,\n.variant-swatch:active,\n.swatch-option:active,\n.swatch-button:active,\n.swatch__button:active,\n.color-swatch__button:active {\n  border: 1px solid #000000 !important;\n}\n</style>",
     "favicon": "shopify://shop_images/favicon-rwb.png",
     "search_product_list": [],
     "content_for_index": []
