@@ -26,7 +26,7 @@
         "heading_awnAze": {
           "type": "heading",
           "settings": {
-            "text": "Shop {{ collection.title }}",
+            "text": "{{ collection.title }}",
             "heading_size": "h1-large"
           }
         }
