@@ -9,14 +9,14 @@
  */
 {
   "sections": {
-    "featured_collection_rdnbeY": {
+    "featured_collection_YkkdeY": {
       "type": "featured-collection",
-      "name": "Sweatshirt Collection",
+      "name": "Tshirts collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
-        "collection": "hoodies-and-sweatshirts",
+        "collection": "men",
         "display_type": "grid",
         "product_limit": 4,
         "columns_desktop": 4,
@@ -25,45 +25,7 @@
         "show_progress_bar": true,
         "marker_color": "#fd6262",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "featured_collection_JxfxpC": {
-      "type": "featured-collection",
-      "name": "Long Sleeve Collection",
-      "settings": {
-        "heading": "{{ section.settings.collection.title }}",
-        "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
-        "collection": "long-sleeve",
-        "display_type": "grid",
-        "product_limit": 4,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "marker_color": "#fd6262",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "featured_collection_aCUM9m": {
-      "type": "featured-collection",
-      "name": "Women's v-necks collection",
-      "settings": {
-        "heading": "{{ section.settings.collection.title }}",
-        "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
-        "collection": "womens-v-neck",
-        "display_type": "grid",
-        "product_limit": 4,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "marker_color": "#fd6262",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "featured_collection_cKN3yM": {
@@ -82,17 +44,17 @@
         "show_progress_bar": true,
         "marker_color": "#fd6262",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
-    "featured_collection_YkkdeY": {
+    "featured_collection_aCUM9m": {
       "type": "featured-collection",
-      "name": "Tshirts collection",
+      "name": "Women's v-necks collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
-        "collection": "men",
+        "collection": "womens-v-neck",
         "display_type": "grid",
         "product_limit": 4,
         "columns_desktop": 4,
@@ -101,7 +63,45 @@
         "show_progress_bar": true,
         "marker_color": "#fd6262",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_JxfxpC": {
+      "type": "featured-collection",
+      "name": "Long Sleeve Collection",
+      "settings": {
+        "heading": "{{ section.settings.collection.title }}",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "long-sleeve",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#fd6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_rdnbeY": {
+      "type": "featured-collection",
+      "name": "Sweatshirt Collection",
+      "settings": {
+        "heading": "{{ section.settings.collection.title }}",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "hoodies-and-sweatshirts",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#fd6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
       }
     },
     "main": {
