@@ -64,14 +64,24 @@
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
           "type": "description",
           "settings": {
-            "seo_text_max_height": 1000,
+            "seo_text_max_height": 500,
             "seo_text_read_more": "Read more",
             "seo_text_read_less": "Read less"
           }
         },
-        "386f7e4a-6127-4141-928b-9cb4614ee18c": {
+        "d56924f2-0137-4e3b-8c33-49b1f28391c6": {
           "type": "collapsible_tab",
           "disabled": true,
+          "settings": {
+            "heading": "Details",
+            "open": false,
+            "content": "<p>Row content</p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "386f7e4a-6127-4141-928b-9cb4614ee18c": {
+          "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
             "open": false,
@@ -80,7 +90,7 @@
             "custom_liquid": ""
           }
         },
-        "d56924f2-0137-4e3b-8c33-49b1f28391c6": {
+        "collapsible_tab_FXJqaX": {
           "type": "collapsible_tab",
           "disabled": true,
           "settings": {
@@ -133,8 +143,9 @@
         "quantity",
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
-        "386f7e4a-6127-4141-928b-9cb4614ee18c",
         "d56924f2-0137-4e3b-8c33-49b1f28391c6",
+        "386f7e4a-6127-4141-928b-9cb4614ee18c",
+        "collapsible_tab_FXJqaX",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
         "fc6da228-45eb-4a6e-aa68-d6ec477bec34",
         "47f50ec7-2a76-44a7-bce6-b7895e0e8ca7",
@@ -716,6 +727,7 @@
       "blocks": {
         "judge_me_reviews_review_widget_errw8R": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
