@@ -17,7 +17,7 @@
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "men",
-        "display_type": "grid",
+        "display_type": "carousel",
         "product_limit": 4,
         "columns_desktop": 4,
         "show_view_all": true,
