@@ -49,7 +49,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/about-hero.webp",
+        "image": "shopify://shop_images/home-img1.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-400",
