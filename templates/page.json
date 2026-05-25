@@ -11,7 +11,7 @@
   "sections": {
     "featured_collection_rdnbeY": {
       "type": "featured-collection",
-      "name": "Featured collection",
+      "name": "Sweatshirt Collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
@@ -23,14 +23,14 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "marker_color": "#FD6262",
+        "marker_color": "#fd6262",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
     },
     "featured_collection_JxfxpC": {
       "type": "featured-collection",
-      "name": "Featured collection",
+      "name": "Long Sleeve Collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
@@ -42,14 +42,14 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "marker_color": "#FD6262",
+        "marker_color": "#fd6262",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
     },
     "featured_collection_aCUM9m": {
       "type": "featured-collection",
-      "name": "Featured collection",
+      "name": "Women's v-necks collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
@@ -61,14 +61,14 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "marker_color": "#FD6262",
+        "marker_color": "#fd6262",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
     },
     "featured_collection_cKN3yM": {
       "type": "featured-collection",
-      "name": "Featured collection",
+      "name": "Womens crew necks collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
@@ -80,14 +80,14 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "marker_color": "#FD6262",
+        "marker_color": "#fd6262",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
     },
     "featured_collection_YkkdeY": {
       "type": "featured-collection",
-      "name": "Featured collection",
+      "name": "Tshirts collection",
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
@@ -99,7 +99,7 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "marker_color": "#FD6262",
+        "marker_color": "#fd6262",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -110,11 +110,11 @@
     }
   },
   "order": [
-    "featured_collection_rdnbeY",
-    "featured_collection_JxfxpC",
-    "featured_collection_aCUM9m",
-    "featured_collection_cKN3yM",
     "featured_collection_YkkdeY",
+    "featured_collection_cKN3yM",
+    "featured_collection_aCUM9m",
+    "featured_collection_JxfxpC",
+    "featured_collection_rdnbeY",
     "main"
   ]
 }
