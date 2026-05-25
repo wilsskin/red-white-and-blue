@@ -59,7 +59,7 @@
     "free_shipping_minimum": "75",
     "search_product_collection": "all",
     "search_product_collection_limit": 3,
-    "custom_html_head": "<style>\n/* Color swatch border styling */\n.product-form__input--color label {\n  border: 1px solid #000000 !important;\n}\n</style>",
+    "custom_html_head": "<style>\n/* Color swatch border styling */\n.product-form__input--color label {\n  border: 1px solid #000000 !important;\n}\n\n/* Product card swatch border styling - only for white swatches */\n.product-card-swatch.is-white {\n  border: 1px solid #000000 !important;\n}\n</style>",
     "favicon": "shopify://shop_images/favicon-rwb.png",
     "search_product_list": [],
     "content_for_index": []
