@@ -138,5 +138,19 @@
 		<script type="module" src="{{ 'instant-page.js' | asset_url }}" defer="defer"></script>
 		{%- endunless -%}
 	{%- endif -%}
-</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.product-card-swatch').forEach(function(swatch) {
+      const style = swatch.getAttribute('style') || '';
+      const match = style.match(/--option-color:\s*([^;]+)/);
+      if (match) {
+        const color = match[1].trim().toLowerCase().replace(/\s/g, '');
+        const whiteValues = ['#ffffff', '#fff', '#f8f8f8', 'rgb(255,255,255)'];
+        if (whiteValues.some(w => color.includes(w))) {
+          swatch.classList.add('is-white');
+        }
+      }
+    });
+  });
+</script></body>
 </html>
