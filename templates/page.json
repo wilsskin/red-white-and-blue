@@ -13,7 +13,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Sweatshirts and Hoodies",
+        "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "hoodies-and-sweatshirts",
@@ -32,7 +32,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Featured Collection",
+        "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "long-sleeve",
@@ -51,7 +51,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Featured Collection",
+        "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "womens-v-neck",
@@ -70,7 +70,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Featured Collection",
+        "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "womens-crew-neck",
@@ -89,7 +89,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "heading": "Featured Collection",
+        "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
         "description": "<p>Describe your featured collection here</p>",
         "collection": "men",
