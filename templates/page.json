@@ -15,7 +15,7 @@
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
+        "description": "",
         "collection": "men",
         "display_type": "grid",
         "product_limit": 4,
@@ -34,7 +34,7 @@
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
+        "description": "",
         "collection": "womens-crew-neck",
         "display_type": "grid",
         "product_limit": 4,
@@ -53,7 +53,7 @@
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
+        "description": "",
         "collection": "womens-v-neck",
         "display_type": "grid",
         "product_limit": 4,
@@ -72,7 +72,7 @@
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
+        "description": "",
         "collection": "long-sleeve",
         "display_type": "grid",
         "product_limit": 4,
@@ -91,7 +91,7 @@
       "settings": {
         "heading": "{{ section.settings.collection.title }}",
         "marker_style": "style1",
-        "description": "<p>Describe your featured collection here</p>",
+        "description": "",
         "collection": "hoodies-and-sweatshirts",
         "display_type": "grid",
         "product_limit": 4,
