@@ -76,7 +76,7 @@
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 4,
-        "pagination_type": "loadmore",
+        "pagination_type": "infinite",
         "enable_filtering": true,
         "enable_sorting": true,
         "show_counts": true,
