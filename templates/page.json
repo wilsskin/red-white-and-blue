@@ -20,7 +20,7 @@
         "display_type": "grid",
         "product_limit": 4,
         "columns_desktop": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
         "marker_color": "#1d58ba",
