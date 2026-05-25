@@ -18,7 +18,7 @@
         "description": "<p>Describe your featured collection here</p>",
         "collection": "men",
         "display_type": "carousel",
-        "product_limit": 4,
+        "product_limit": 2,
         "columns_desktop": 4,
         "show_view_all": true,
         "mobile_swipe": true,
