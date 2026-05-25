@@ -1,1 +1,120 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_collection_rdnbeY": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Sweatshirts and Hoodies",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "hoodies-and-sweatshirts",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#FD6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "featured_collection_JxfxpC": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "long-sleeve",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#FD6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "featured_collection_aCUM9m": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "womens-v-neck",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#FD6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "featured_collection_cKN3yM": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "womens-crew-neck",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#FD6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "featured_collection_YkkdeY": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "marker_style": "style1",
+        "description": "<p>Describe your featured collection here</p>",
+        "collection": "men",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "marker_color": "#FD6262",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "featured_collection_rdnbeY",
+    "featured_collection_JxfxpC",
+    "featured_collection_aCUM9m",
+    "featured_collection_cKN3yM",
+    "featured_collection_YkkdeY",
+    "main"
+  ]
+}
