@@ -37,7 +37,6 @@
       "name": "Image with text overlay",
       "settings": {
         "image": "{{ collection.metafields.custom.banner_image.value }}",
-        "mobile_image": "{{ collection.metafields.custom.banner_image.value }}",
         "image_parallax": false,
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-auto",
