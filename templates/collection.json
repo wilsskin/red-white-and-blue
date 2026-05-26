@@ -39,7 +39,7 @@
         "image": "{{ collection.metafields.custom.banner_image.value }}",
         "image_parallax": false,
         "desktop_height": "desktop-height-450",
-        "mobile_height": "mobile-height-350",
+        "mobile_height": "mobile-height-auto",
         "full_width": true,
         "content_width": "medium",
         "content_position": "bottom-left",
